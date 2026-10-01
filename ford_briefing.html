@@ -3,409 +3,401 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ford Motor Company - Business Briefing | STEMConnect26</title>
+<title>Ford Motor Company - Executive Briefing | SASE STEM Connect 26</title>
 <style>
   :root {
-    --ford-blue: #003478;
-    --ford-blue-dark: #00254f;
-    --ford-blue-light: #e8eef7;
-    --accent: #1967d2;
-    --bg: #f4f6fa; --surface: #ffffff; --border: #dfe5ee; --border-subtle: #edf1f7;
-    --text: #14203a; --muted: #5b6b85; --light: #8b99b0;
-    --green-bg: #ecfdf5; --green-txt: #047857; --amber-bg: #fffbeb; --amber-txt: #92400e;
-    --red-bg: #fef2f2; --red-txt: #b91c1c; --red-border: #fecaca; --purple-bg: #f5f3ff; --purple-txt: #6d28d9;
+    --ink: #0f1720;
+    --muted: #5f6b7c;
+    --faint: #98a2b3;
+    --rule: #e3e7ee;
+    --paper: #fbfbfc;
+    --navy: #003478;
+    --accent: #175cd3;
+    --quick: #067647;
+    --core: #175cd3;
+    --bold: #b54708;
+    --moon: #6941c6;
+    --serif: "Charter", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 13.5px; line-height: 1.55; padding: 16px; -webkit-font-smoothing: antialiased; }
-  .wrap { max-width: 1180px; margin: 0 auto; }
+  html { -webkit-font-smoothing: antialiased; }
+  body { background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 13px; line-height: 1.5; }
+  .page { max-width: 1060px; margin: 0 auto; padding: 34px 34px 60px; background: #fff; min-height: 100vh; }
 
-  .hero { background: linear-gradient(135deg, var(--ford-blue) 0%, var(--ford-blue-dark) 70%); color: #fff; border-radius: 16px; padding: 26px 28px; box-shadow: 0 12px 34px rgba(0,52,120,.25); }
-  .hero .kicker { font-size: 11px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: #9db8dd; }
-  .hero h1 { font-size: 26px; font-weight: 800; letter-spacing: -.02em; margin-top: 4px; }
-  .hero .sub { color: #c9d8ee; font-size: 13px; margin-top: 6px; max-width: 760px; }
-  .hero .meta { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 14px; font-size: 11.5px; color: #b9cbe6; }
-  .hero .meta b { color: #fff; }
+  /* ---------- masthead ---------- */
+  .masthead { display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; padding-bottom: 14px; border-bottom: 2px solid var(--ink); }
+  .masthead .kicker { font-size: 10px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--faint); }
+  .masthead h1 { font-family: var(--serif); font-weight: 600; font-size: 34px; line-height: 1.05; letter-spacing: -.01em; margin-top: 6px; }
+  .masthead h1 span { color: var(--navy); }
+  .masthead .meta { text-align: right; font-size: 10.5px; color: var(--muted); line-height: 1.7; }
+  .masthead .meta b { color: var(--ink); font-weight: 700; }
 
-  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; margin-top: 16px; }
-  .stat { background: rgba(255,255,255,.09); border: 1px solid rgba(255,255,255,.16); border-radius: 11px; padding: 10px 12px; }
-  .stat .n { font-size: 19px; font-weight: 800; }
-  .stat .l { font-size: 10.5px; color: #b9cbe6; line-height: 1.3; }
+  /* ---------- thesis + kpis ---------- */
+  .opening { display: grid; grid-template-columns: 1.15fr 1fr; gap: 36px; padding: 26px 0 22px; border-bottom: 1px solid var(--rule); }
+  .thesis { font-family: var(--serif); font-size: 19px; line-height: 1.45; letter-spacing: -.005em; color: var(--ink); }
+  .thesis em { font-style: italic; color: var(--navy); }
+  .thesis .support { display: block; margin-top: 12px; font-family: var(--sans); font-size: 12px; color: var(--muted); line-height: 1.6; }
+  .kpis { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 26px; align-content: start; }
+  .kpi .n { font-family: var(--serif); font-size: 27px; font-weight: 600; letter-spacing: -.01em; color: var(--ink); }
+  .kpi .l { font-size: 10.5px; color: var(--muted); line-height: 1.45; margin-top: 2px; }
 
-  .nav { position: sticky; top: 0; z-index: 40; display: flex; flex-wrap: wrap; gap: 6px; padding: 10px 0; background: linear-gradient(180deg, var(--bg) 70%, rgba(244,246,250,.0) 100%); }
-  .nav a { text-decoration: none; font-size: 11.5px; font-weight: 700; color: var(--ford-blue); background: #fff; border: 1px solid var(--border); border-radius: 999px; padding: 5px 11px; }
-  .nav a:hover { border-color: var(--accent); }
+  /* ---------- system strip ---------- */
+  .system { display: grid; grid-template-columns: repeat(4, 1fr); border-bottom: 1px solid var(--rule); }
+  .step { padding: 16px 20px 18px 0; }
+  .step + .step { padding-left: 20px; border-left: 1px solid var(--rule); }
+  .step .no { font-size: 10px; font-weight: 700; letter-spacing: .16em; color: var(--faint); }
+  .step .nm { font-weight: 700; font-size: 12.5px; margin-top: 3px; }
+  .step .ds { font-size: 11px; color: var(--muted); margin-top: 3px; }
 
-  section { margin: 18px 0; }
-  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 18px 20px; }
-  h2 { font-size: 17px; font-weight: 800; letter-spacing: -.01em; margin-bottom: 4px; }
-  h2 .tag { font-size: 10px; vertical-align: middle; margin-left: 8px; background: var(--ford-blue-light); color: var(--ford-blue); border-radius: 999px; padding: 3px 9px; font-weight: 800; letter-spacing: .06em; }
-  h3 { font-size: 14px; font-weight: 800; margin: 14px 0 6px; }
-  h4 { font-size: 13px; font-weight: 800; }
-  p { margin: 7px 0; }
-  .lead { color: var(--muted); }
-  .muted { color: var(--muted); font-size: 12px; }
-  .src { font-size: 10.5px; }
-  .src a { color: var(--accent); text-decoration: none; font-weight: 600; }
-  .src a:hover { text-decoration: underline; }
+  /* ---------- problem sections ---------- */
+  .problem { padding: 26px 0 8px; border-bottom: 1px solid var(--rule); }
+  .p-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; }
+  .p-head .no { font-size: 10px; font-weight: 700; letter-spacing: .18em; color: var(--faint); }
+  .p-head h2 { font-family: var(--serif); font-size: 21px; font-weight: 600; letter-spacing: -.01em; margin-top: 2px; }
+  .p-head .stat { font-family: var(--serif); font-size: 21px; font-weight: 600; color: var(--navy); white-space: nowrap; }
+  .p-head .stat small { display: block; font-family: var(--sans); font-size: 10px; font-weight: 500; color: var(--faint); text-align: right; letter-spacing: .04em; }
+  .situation { margin-top: 8px; font-size: 12px; color: var(--muted); max-width: 780px; }
+  .situation b { color: var(--ink); font-weight: 600; }
+  .situation a, td a { color: var(--accent); text-decoration: none; font-weight: 500; }
+  .situation a:hover { text-decoration: underline; }
 
-  ul.plain { margin: 6px 0 6px 18px; }
-  ul.plain li { margin: 3px 0; }
-  .callout { border-left: 4px solid var(--accent); background: var(--ford-blue-light); border-radius: 0 10px 10px 0; padding: 10px 13px; margin: 10px 0; }
-  .callout.warn { border-left-color: #d97706; background: var(--amber-bg); }
-  .callout.score { border-left-color: #16a34a; background: var(--green-bg); }
+  .ladder { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; margin-top: 14px; }
+  .rung { padding: 0 16px 12px 0; }
+  .rung + .rung { padding-left: 16px; border-left: 1px solid var(--rule); }
+  .rung .band { height: 3px; margin-bottom: 10px; }
+  .rung.q .band { background: var(--quick); }
+  .rung.c .band { background: var(--core); }
+  .rung.b .band { background: var(--bold); }
+  .rung.m .band { background: var(--moon); }
+  .rung .tier { font-size: 9.5px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--faint); }
+  .rung h3 { font-size: 12.5px; font-weight: 700; margin-top: 3px; line-height: 1.3; }
+  .rung p { font-size: 11.5px; color: var(--muted); margin-top: 5px; }
+  .rung .effect { font-size: 11px; margin-top: 7px; color: var(--ink); }
+  .rung .effect b { font-weight: 700; }
+  .rung .risk { font-size: 10.5px; color: var(--faint); margin-top: 3px; }
+  .track { margin-top: 4px; padding: 9px 0 12px; font-size: 10.5px; color: var(--muted); }
+  .track b { font-weight: 700; color: var(--ink); letter-spacing: .04em; }
 
-  .problem-grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
-  .problem { border: 1px solid var(--border); border-radius: 12px; overflow: hidden; background: #fff; }
-  .problem-head { display: flex; flex-wrap: wrap; gap: 10px; align-items: baseline; padding: 12px 16px; background: #f8fafd; border-bottom: 1px solid var(--border-subtle); }
-  .problem-head .num { width: 26px; height: 26px; border-radius: 8px; background: var(--ford-blue); color: #fff; font-weight: 800; display: inline-flex; align-items: center; justify-content: center; }
-  .problem-head .t { font-weight: 800; font-size: 14.5px; }
-  .problem-body { padding: 14px 16px; }
+  /* ---------- matrix ---------- */
+  .matrix { padding: 26px 0; border-bottom: 1px solid var(--rule); }
+  .sec-label { font-size: 10px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--faint); }
+  .matrix h2, .roadmap h2, .talk h2 { font-family: var(--serif); font-size: 20px; font-weight: 600; margin-top: 3px; letter-spacing: -.01em; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin-top: 16px; border: 1px solid var(--rule); }
+  .cell { padding: 14px 16px 16px; min-height: 118px; }
+  .cell + .cell { border-left: 1px solid var(--rule); }
+  .cell.top { border-bottom: 1px solid var(--rule); }
+  .cell .axis { font-size: 9.5px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; color: var(--faint); }
+  .cell ul { list-style: none; margin-top: 8px; }
+  .cell li { font-size: 11.5px; margin: 4px 0; padding-left: 14px; position: relative; }
+  .cell li::before { content: ""; position: absolute; left: 0; top: 6px; width: 6px; height: 6px; border-radius: 50%; background: var(--navy); }
+  .cell li.lt::before { background: #cdd5e0; }
+  .cell.legend { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; align-items: start; }
 
-  .ladder { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 10px; margin-top: 10px; }
-  .rung { border: 1px solid var(--border); border-radius: 11px; padding: 12px; background: #fff; display: flex; flex-direction: column; gap: 6px; }
-  .rung .level { font-size: 10px; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; }
-  .rung .rung-title { font-weight: 800; font-size: 13px; }
-  .rung .row { font-size: 11.5px; }
-  .rung .row b { color: var(--muted); }
-  .lvl-1 { background: var(--green-bg); color: var(--green-txt); }
-  .lvl-2 { background: #eff6ff; color: #1d4ed8; }
-  .lvl-3 { background: var(--amber-bg); color: var(--amber-txt); }
-  .lvl-4 { background: var(--purple-bg); color: var(--purple-txt); }
-  .rung.r1 { border-top: 3px solid #16a34a; }
-  .rung.r2 { border-top: 3px solid #2563eb; }
-  .rung.r3 { border-top: 3px solid #d97706; }
-  .rung.r4 { border-top: 3px solid #7c3aed; }
+  /* ---------- roadmap ---------- */
+  .roadmap { padding: 26px 0; border-bottom: 1px solid var(--rule); }
+  .timeline { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 16px; }
+  .phase { padding-right: 18px; }
+  .phase + .phase { border-left: 1px solid var(--rule); padding-left: 18px; }
+  .phase .when { font-family: var(--serif); font-size: 17px; font-weight: 600; }
+  .phase .when small { font-family: var(--sans); font-size: 10px; color: var(--faint); letter-spacing: .05em; margin-left: 6px; }
+  .phase ul { list-style: none; margin-top: 8px; }
+  .phase li { font-size: 11.5px; color: var(--muted); margin: 5px 0; padding-left: 12px; position: relative; }
+  .phase li::before { content: "—"; position: absolute; left: 0; color: var(--faint); }
 
-  table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; margin-top: 10px; }
-  th { background: #f8fafd; text-align: left; font-size: 10px; text-transform: uppercase; letter-spacing: .07em; color: #7c8aa0; padding: 8px 11px; border-bottom: 1px solid var(--border); }
-  td { padding: 8px 11px; border-bottom: 1px solid var(--border-subtle); font-size: 12px; vertical-align: top; }
-  tr:last-child td { border-bottom: none; }
-  .pill { display: inline-block; font-size: 10px; font-weight: 800; border-radius: 999px; padding: 2px 8px; }
-  .pil-h { background: var(--red-bg); color: var(--red-txt); }
-  .pil-m { background: var(--amber-bg); color: var(--amber-txt); }
-  .pil-l { background: var(--green-bg); color: var(--green-txt); }
+  /* ---------- talk track ---------- */
+  .talk { padding: 26px 0 8px; }
+  .columns { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin-top: 16px; }
+  .col { padding-right: 24px; }
+  .col + .col { border-left: 1px solid var(--rule); padding-left: 24px; }
+  .col h3 { font-size: 11px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; color: var(--faint); margin-bottom: 10px; }
+  .quote { font-family: var(--serif); font-size: 13.5px; line-height: 1.5; margin: 10px 0; padding-left: 12px; border-left: 2px solid var(--navy); }
+  .ask { font-size: 12px; color: var(--muted); margin: 8px 0; padding-left: 12px; border-left: 2px solid var(--rule); }
+  .ask b { color: var(--ink); font-weight: 600; }
 
-  .system { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 10px; }
-  .layer { border-radius: 12px; padding: 12px; border: 1px solid var(--border); background: #fff; }
-  .layer .l { font-size: 10px; font-weight: 800; color: var(--light); text-transform: uppercase; letter-spacing: .08em; }
-  .layer .n { font-weight: 800; font-size: 13px; margin: 2px 0 4px; }
-  .layer .d { font-size: 11.5px; color: var(--muted); }
-  .layer.hot { border-color: var(--ford-blue); box-shadow: 0 0 0 2px var(--ford-blue-light) inset; }
+  /* ---------- sources ---------- */
+  .sources { padding: 22px 0 0; font-size: 10.5px; color: var(--faint); line-height: 1.7; }
+  .sources a { color: var(--muted); text-decoration: none; }
+  .sources a:hover { text-decoration: underline; }
+  .sources .note { margin-top: 8px; }
 
-  .qa { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 10px; }
-  .qa .box { border: 1px solid var(--border); border-radius: 11px; padding: 12px; background: #fff; }
-  .qa .box h4 { margin-bottom: 6px; }
-  .qa .box li { font-size: 12px; margin: 5px 0 5px 16px; }
-
-  footer { color: var(--light); font-size: 11px; margin: 22px 2px; }
-
-  @media (max-width: 900px) {
-    .system { grid-template-columns: 1fr 1fr; }
-    .qa { grid-template-columns: 1fr; }
-    .hero h1 { font-size: 21px; }
-  }
   @media print {
-    .nav { display: none; }
-    body { background: #fff; padding: 0; }
-    .card, .problem, .rung { break-inside: avoid; }
-    .hero { box-shadow: none; }
+    body { background: #fff; font-size: 11.5px; }
+    .page { padding: 0; max-width: none; }
+    .problem, .matrix, .roadmap, .talk { break-inside: avoid; }
+  }
+  @media (max-width: 860px) {
+    .opening { grid-template-columns: 1fr; gap: 20px; }
+    .system, .ladder, .timeline, .grid2, .columns { grid-template-columns: 1fr; }
+    .step + .step, .rung + .rung, .phase + .phase, .cell + .cell, .col + .col { border-left: none; padding-left: 0; border-top: 1px solid var(--rule); padding-top: 12px; }
+    .masthead { flex-direction: column; align-items: flex-start; }
+    .masthead .meta { text-align: left; }
   }
 </style>
 </head>
 <body>
-<div class="wrap">
+<div class="page">
 
-  <div class="hero">
-    <div class="kicker">Business Briefing - SASE STEM Connect 26</div>
-    <h1>Ford Motor Company: three problems, one solution system</h1>
-    <div class="sub">A plain-English briefing for business conversations: what Ford is dealing with right now, why it matters to the bottom line, and a ladder of solutions - from a 90-day quick win to a moonshot - that a data &amp; analytics team can realistically execute.</div>
+  <header class="masthead">
+    <div>
+      <div class="kicker">Executive Briefing &middot; Data &amp; Analytics</div>
+      <h1>Ford Motor Company<span>.</span></h1>
+      <div class="kicker" style="margin-top:6px;">Three problems. One information system. A sequenced plan.</div>
+    </div>
     <div class="meta">
-      <span><b>Prepared for:</b> career fair booth conversations</span>
-      <span><b>Audience:</b> business &amp; operations stakeholders</span>
-      <span><b>Date:</b> October 2026</span>
+      <b>SASE STEM Connect 26</b><br>
+      Seattle &middot; October 2026<br>
+      Business audience &middot; no jargon
     </div>
-    <div class="stats">
-      <div class="stat"><div class="n">152</div><div class="l">safety recalls in 2025 - the most ever by an automaker in a single year</div></div>
-      <div class="stat"><div class="n">~$1.5B</div><div class="l">expected cost of the F-150 / Novelis aluminum supply disruption</div></div>
-      <div class="stat"><div class="n">$19.5B</div><div class="l">write-down on EV assets (Dec 2025); EV break-even targeted for 2029</div></div>
-      <div class="stat"><div class="n">~$2B</div><div class="l">tariff cost in 2025 (incl. a $900M retroactive hit), expected to repeat in 2026</div></div>
+  </header>
+
+  <section class="opening">
+    <div class="thesis">
+      Recalls, supply shocks and EV losses share one root cause: <em>decisions run on late, fragmented information.</em>
+      <span class="support">The plan connects facts Ford already owns, raises exceptions early, rehearses decisions before they are forced, then turns that speed into prevention and new revenue. Every play below is scoped for a data &amp; analytics team - not a new factory.</span>
     </div>
-  </div>
-
-  <nav class="nav">
-    <a href="#summary">Executive summary</a>
-    <a href="#problem-1">1. Quality &amp; recalls</a>
-    <a href="#problem-2">2. Supply chain shocks</a>
-    <a href="#problem-3">3. EV losses &amp; tariffs</a>
-    <a href="#system">The system</a>
-    <a href="#scorecard">Priority scorecard</a>
-    <a href="#roadmap">30/60/90 plan</a>
-    <a href="#talktrack">Talk track</a>
-    <a href="#sources">Sources</a>
-  </nav>
-
-  <section id="summary" class="card">
-    <h2>The one-page version</h2>
-    <p class="lead">Ford is fighting three fires at once: field quality (recalls), parts supply shocks, and money-losing EVs under tariff pressure. They look like three different problems. They are actually one problem wearing three hats:</p>
-    <div class="callout"><b>Every one of these problems is a "late information" problem.</b> The signals existed before the damage - warranty repair notes piling up, a single-source supplier in a fire zone, incentives and tariffs shifting mid-quarter - but they reached decision-makers too late, split across too many systems. The business fix is not a new factory. It is a faster path from signal to decision.</div>
-    <h3>What the solution system looks like (in business terms)</h3>
-    <ul class="plain">
-      <li><b>Connect the facts.</b> One shared view of vehicle, supplier, and cost information - so people stop debating whose spreadsheet is right.</li>
-      <li><b>See it coming.</b> Simple red/amber/green alerts when something unusual happens - before it becomes a headline or a line stoppage.</li>
-      <li><b>Play it forward.</b> "What if" planning (tariffs, demand, supplier outages) so decisions are made once, not re-made every quarter.</li>
-      <li><b>Prevent and monetize.</b> Use the early lead to fix cars before they fail, buffer the right parts, and turn fleet data into new service revenue.</li>
-    </ul>
-    <p class="muted">Each problem section below follows the same pattern: the situation, why it matters to the P&amp;L, then a four-rung solution ladder - Quick win, Core system, Bold move, and a Moonshot ("crazy" idea).</p>
+    <div class="kpis">
+      <div class="kpi"><div class="n">152</div><div class="l">safety recalls in 2025 - an industry record; ~40 were reissued software fixes</div></div>
+      <div class="kpi"><div class="n">~$1.5B</div><div class="l">expected cost - F-150 line halt and Novelis aluminum fires</div></div>
+      <div class="kpi"><div class="n">$19.5B</div><div class="l">EV asset write-down; EV break-even targeted for 2029</div></div>
+      <div class="kpi"><div class="n">~$2B</div><div class="l">tariff cost in 2025, incl. a $900M retroactive hit; repeats in 2026</div></div>
+    </div>
   </section>
 
-  <!-- ============================= PROBLEM 1 ============================= -->
-  <section id="problem-1" class="problem">
-    <div class="problem-head"><span class="num">1</span><span class="t">Quality &amp; recalls: the most recalls any automaker has ever had in one year</span></div>
-    <div class="problem-body">
-      <h3>The situation</h3>
-      <p>Ford issued <b>152 safety recalls in 2025</b> - nearly double the previous industry record (77, set by GM in 2014). The issues ranged from parking modules that let vehicles roll away, to electrical faults with fire risk, to parts that can detach. About <b>40 of the recalls were reissued software updates</b> - meaning the fix was sent but not properly verified as installed. Ford has since doubled its safety team and told investors warranty costs are finally coming down, but the volume of field failures is still jamming dealership service bays and leaving some new vehicles stuck at factories, undeliverable. <span class="src">Source: <a href="https://www.cbtnews.com/ford-posts-record-152-recalls-in-2025-but-says-vehicle-quality-is-improving/" target="_blank" rel="noopener noreferrer">CBT News</a></span></p>
-      <h3>Why the business should care</h3>
-      <ul class="plain">
-        <li><b>Direct cost:</b> every recall pays for parts, dealer labor, loaner cars, shipping, and communication - and repeat recalls pay twice.</li>
-        <li><b>Brand and pricing power:</b> "Quality is Job 1" is Ford history; quality perception drives resale values and whether buyers pay full price.</li>
-        <li><b>Dealer relations:</b> service bays occupied by recall work cannot do profitable customer work.</li>
-        <li><b>Regulatory exposure:</b> recalls above thresholds invite NHTSA scrutiny and consent-decree-style oversight.</li>
-      </ul>
-      <h3>The solution ladder</h3>
-      <div class="ladder">
-        <div class="rung r1">
-          <span class="level lvl-1">Quick win - 0 to 90 days</span>
-          <div class="rung-title">One quality scoreboard</div>
-          <div class="row"><b>What it is:</b> a single monthly scorecard per model, plant, and supplier combining warranty claims, dealer repair notes, and roadside/connected-car alerts - red/amber/green with one named owner per red item.</div>
-          <div class="row"><b>How it works:</b> existing reports get consolidated into one page; a standing 60-minute quality review assigns actions and deadlines.</div>
-          <div class="row"><b>Business impact:</b> leadership sees the same truth; escalations happen in weeks, not quarters.</div>
-          <div class="row"><b>Watch out for:</b> dealer repair notes arrive late and are written inconsistently - start simple and improve, don't wait for perfect data.</div>
-        </div>
-        <div class="rung r2">
-          <span class="level lvl-2">Core system - 3 to 9 months</span>
-          <div class="rung-title">"Smoke detectors" for defects</div>
-          <div class="row"><b>What it is:</b> automated alerts when failures cluster above normal - by part batch, plant, or model - plus automatic verification that every over-the-air software fix actually installed. This directly addresses the 40 reissued recalls.</div>
-          <div class="row"><b>How it works:</b> weekly quality "war room" works from a ranked risk list; engineering confirms or clears each alert; the list shortens every week.</div>
-          <div class="row"><b>Business impact:</b> catch defects before regulators do; fewer repeat recalls; lower cost per recall.</div>
-          <div class="row"><b>Watch out for:</b> false alarms can erode trust - tune the thresholds with the quality team, and keep a human sign-off before any recall decision.</div>
-        </div>
-        <div class="rung r3">
-          <span class="level lvl-3">Bold move - 9 to 24 months</span>
-          <div class="rung-title">A "Vehicle Health Score" for every Ford</div>
-          <div class="row"><b>What it is:</b> a simple 1-100 health score per vehicle, like a credit score, built from connected-car signals and service history. Owners and dealers get early warnings: "this truck needs attention before it fails."</div>
-          <div class="row"><b>How it works:</b> dealers invite owners in for proactive repairs; Ford Pro fleets get a dashboard to service trucks only when needed. Opt-in for consumers.</div>
-          <div class="row"><b>Business impact:</b> fewer breakdowns, stronger service loyalty, a data asset that can be shared (with consent) with insurers and fleet customers.</div>
-          <div class="row"><b>Watch out for:</b> privacy optics, dealer adoption, and false warnings that annoy customers. Pilot with one model and one region first.</div>
-        </div>
-        <div class="rung r4">
-          <span class="level lvl-4">Moonshot - 24+ months</span>
-          <div class="rung-title">The zero-recall loop: quality before the customer</div>
-          <div class="row"><b>What it is:</b> a simulated "digital twin" of the fleet - every design change and supplier batch tested against millions of real-world usage patterns before production - plus a "bug bounty" that pays dealers, technicians, and owners for early defect reports.</div>
-          <div class="row"><b>How it works:</b> quality game-days with suppliers; public quality transparency report to earn back trust; catch 90% of defects before sale.</div>
-          <div class="row"><b>Business impact:</b> the recall line on the income statement becomes an industry benchmark; brand premium returns.</div>
-          <div class="row"><b>Watch out for:</b> cost and culture change, supplier willingness, and legal caution - documented internal predictions can attract litigation, so governance matters.</div>
-        </div>
+  <section class="system">
+    <div class="step"><div class="no">01</div><div class="nm">Connect</div><div class="ds">One shared view of vehicle, supplier and cost data.</div></div>
+    <div class="step"><div class="no">02</div><div class="nm">Warn</div><div class="ds">Exceptions surfaced with owners - not another report.</div></div>
+    <div class="step"><div class="no">03</div><div class="nm">Simulate</div><div class="ds">Tariff, demand and outage scenarios before decisions.</div></div>
+    <div class="step"><div class="no">04</div><div class="nm">Prevent</div><div class="ds">Proactive repairs, strategic buffers, new service revenue.</div></div>
+  </section>
+
+  <!-- 01 QUALITY -->
+  <section class="problem">
+    <div class="p-head">
+      <div>
+        <div class="no">PROBLEM 01</div>
+        <h2>Quality &amp; recalls</h2>
       </div>
-      <div class="callout score"><b>Measures that tell us it is working:</b> recalls per year, share of recalls that are repeats, warranty cost per vehicle, days from first signal to action, OTA install verification rate, service-bay availability.</div>
+      <div class="stat">152 recalls<small>IN 2025 &middot; INDUSTRY RECORD</small></div>
     </div>
-  </section>
-
-  <!-- ============================= PROBLEM 2 ============================= -->
-  <section id="problem-2" class="problem">
-    <div class="problem-head"><span class="num">2</span><span class="t">Supply chain shocks: when one supplier can halt the F-150</span></div>
-    <div class="problem-body">
-      <h3>The situation</h3>
-      <p>A supplier component shortage <b>halted F-150 production at Dearborn for about a week starting Sept 24, 2026</b>, and idled the Kansas City truck plant too - CEO Jim Farley confirmed it would dent third-quarter truck deliveries. This compounds the September and November 2025 fires at the Novelis aluminum plant in Oswego, New York: Ford absorbed roughly <b>$800M in charges in the first half of 2025 alone</b>, with the total disruption expected to cost about <b>$1.5B</b>. F-Series sales were still down 11% through August 2026 while Ford scrambles to build 150,000 extra trucks to catch up. <span class="src">Sources: <a href="https://finance.yahoo.com/markets/stocks/articles/ford-f-150-supplier-disruption-163352684.html" target="_blank" rel="noopener noreferrer">Yahoo Finance</a>, <a href="https://www.freep.com/story/money/cars/ford/2026/09/25/ford-f-150-dearborn-truck-production-down/91939468007/" target="_blank" rel="noopener noreferrer">Detroit Free Press</a>, <a href="https://www.detroitnews.com/story/business/autos/ford/2026/09/30/f-150-supplier-disruption-to-hit-3q-sales-ford-ceo-jim-farley-says/92021499007/" target="_blank" rel="noopener noreferrer">Detroit News</a></span></p>
-      <h3>Why the business should care</h3>
-      <ul class="plain">
-        <li><b>F-150 is the profit engine.</b> Every day the line is down is lost high-margin revenue that rarely comes back on schedule.</li>
-        <li><b>Recovery is expensive:</b> overtime, premium freight, and expedited parts eat the margin on the trucks Ford does build.</li>
-        <li><b>Customers wait:</b> dealer lots thin out, rivals get the sale, and fleet customers rethink contracts.</li>
-        <li><b>Single points of failure:</b> critical inputs like aluminum were effectively single-sourced - no plan B exists when they stop.</li>
-      </ul>
-      <h3>The solution ladder</h3>
-      <div class="ladder">
-        <div class="rung r1">
-          <span class="level lvl-1">Quick win - 0 to 90 days</span>
-          <div class="rung-title">Supplier "weather map"</div>
-          <div class="row"><b>What it is:</b> a monthly heat map of the top 200 parts and suppliers: single-sourced? financially healthy? in a fire/flood/storm zone? how many days of stock on hand? Red/amber/green with an owner per red.</div>
-          <div class="row"><b>How it works:</b> procurement and plant teams fill gaps together; the map becomes a standing agenda item in the monthly operations review.</div>
-          <div class="row"><b>Business impact:</b> the company finally sees its top 20 "this could stop us" risks on one page.</div>
-          <div class="row"><b>Watch out for:</b> visibility usually stops at direct (Tier 1) suppliers - flag unknown tiers as a risk in itself rather than pretending they are green.</div>
-        </div>
-        <div class="rung r2">
-          <span class="level lvl-2">Core system - 3 to 9 months</span>
-          <div class="rung-title">Control tower with smoke alarms</div>
-          <div class="row"><b>What it is:</b> live monitoring that combines internal stock levels with outside signals - supplier financial news, port congestion, weather, facility events - and raises alerts with a playbook attached: who calls whom, which alternate site can run, what to expedite.</div>
-          <div class="row"><b>How it works:</b> teams rehearse "shutdown drills" (simulate losing a top-20 supplier and time the recovery) so the first real event is not the first rehearsal.</div>
-          <div class="row"><b>Business impact:</b> downtime measured in days becomes measured in hours; premium freight spending drops.</div>
-          <div class="row"><b>Watch out for:</b> too many false alarms kill trust - start with the top 50 parts and tune from there.</div>
-        </div>
-        <div class="rung r3">
-          <span class="level lvl-3">Bold move - 9 to 24 months</span>
-          <div class="rung-title">Strategic buffers by design</div>
-          <div class="row"><b>What it is:</b> treat buffer inventory and dual-sourcing like an insurance premium: for each critical part, compare the cost of holding extra stock or a second supplier against the expected cost of a stoppage - then pay the premium where the math says so.</div>
-          <div class="row"><b>How it works:</b> pre-qualify alternate suppliers and regional micro-hubs for the top 50 parts; agree restart playbooks with logistics partners in advance.</div>
-          <div class="row"><b>Business impact:</b> a deliberate trade of small carrying costs for avoided nine-figure disruptions.</div>
-          <div class="row"><b>Watch out for:</b> unions and plant constraints limit fast re-planning; capital for buffers competes with other projects, so the business case must be explicit.</div>
-        </div>
-        <div class="rung r4">
-          <span class="level lvl-4">Moonshot - 24+ months</span>
-          <div class="rung-title">Ford's own "supply shock insurance"</div>
-          <div class="row"><b>What it is:</b> an internal risk pool that prices every critical part like an insurer would - probability of disruption times cost - and funds buffers, alternate capacity, or even small regional manufacturing (3D printing / machining) from "premiums."</div>
-          <div class="row"><b>How it works:</b> suppliers share capacity and continuity data in exchange for Ford's risk data and longer contracts; the pool's performance is reported to investors as resilience, not overhead.</div>
-          <div class="row"><b>Business impact:</b> resilience becomes a competitive selling point: "F-150 ships on time, even in bad years."</div>
-          <div class="row"><b>Watch out for:</b> complexity, supplier trust, and governance - start with the top 20 parts and one commodity (aluminum) as the pilot.</div>
-        </div>
+    <p class="situation"><b>An industry record - and roughly 40 were reissued software fixes never verified as installed.</b> Ford doubled its safety team and warranty costs are easing, but field failures still jam dealer service bays and strand new vehicles. <a href="https://www.cbtnews.com/ford-posts-record-152-recalls-in-2025-but-says-vehicle-quality-is-improving/" target="_blank" rel="noopener">CBT News</a></p>
+    <div class="ladder">
+      <div class="rung q"><div class="band"></div>
+        <div class="tier">Quick win &middot; &le;90 days</div>
+        <h3>One quality scoreboard</h3>
+        <p>Warranty claims, repair notes and vehicle alerts on a single monthly page, red items owned by name.</p>
+        <div class="effect"><b>Effect:</b> same facts for everyone; weeks not quarters.</div>
+        <div class="risk">Watch: dealer notes lag and vary.</div>
       </div>
-      <div class="callout score"><b>Measures that tell us it is working:</b> production downtime hours, premium freight spend, share of critical parts with a qualified backup, days-of-supply coverage at risky sites, time-to-recover estimates for top-20 suppliers.</div>
-    </div>
-  </section>
-
-  <!-- ============================= PROBLEM 3 ============================= -->
-  <section id="problem-3" class="problem">
-    <div class="problem-head"><span class="num">3</span><span class="t">EV losses and tariffs: the capital-allocation pivot</span></div>
-    <div class="problem-body">
-      <h3>The situation</h3>
-      <p>Ford posted an <b>$11.1B net loss in the fourth quarter of 2025</b> - its largest since 2008 - after losing <b>$4.8B on EVs in 2025</b>, and it expects another $4B-$4.5B of EV losses in 2026 with break-even only in 2029. In December 2025 it took a <b>$19.5B charge</b> on EV assets and roadmap, cut F-150 Lightning production, and refocused on hybrids and a future $30,000 EV platform. Tariffs cost about <b>$2B in 2025</b> (including an unplanned $900M retroactive hit) and are expected near that level again in 2026. Full-year earnings before interest and taxes of $6.8B narrowly missed the revised $7B guidance even as fourth-quarter revenue of $45.9B beat expectations. <span class="src">Sources: <a href="https://nypost.com/2026/02/11/business/ford-ceo-admits-that-the-customer-has-spoken-after-ev-push-drives-major-quarterly-loss/" target="_blank" rel="noopener noreferrer">NY Post / Fox Business</a>, <a href="https://www.msn.com/en-us/money/top-stocks/history-says-what-ford-stock-has-done-in-the-2-years-after-each-full-year-loss/ar-AA2b9bjH" target="_blank" rel="noopener noreferrer">MSN</a></span></p>
-      <h3>Why the business should care</h3>
-      <ul class="plain">
-        <li><b>Investor credibility:</b> repeated guidance misses and huge write-downs make every future capital request harder to defend.</li>
-        <li><b>Wrong mix is expensive:</b> building vehicles customers do not buy at prices that do not cover costs destroys value at scale.</li>
-        <li><b>Tariffs are a margin tax</b> that changes faster than annual plans - the company needs to re-plan as quickly as policy moves.</li>
-        <li><b>Product bets are irreversible:</b> factories, tooling, and battery contracts lock in costs for years.</li>
-      </ul>
-      <h3>The solution ladder</h3>
-      <div class="ladder">
-        <div class="rung r1">
-          <span class="level lvl-1">Quick win - 0 to 90 days</span>
-          <div class="rung-title">True profit per vehicle</div>
-          <div class="row"><b>What it is:</b> one scorecard answering, for every model and plant: sticker price minus material, tariff, battery, warranty, and incentives = what Ford actually earns per vehicle. Refreshed monthly instead of annually.</div>
-          <div class="row"><b>How it works:</b> finance, product, and manufacturing agree on one definition of cost; disagreements move from "whose number is right" to "what do we do about it."</div>
-          <div class="row"><b>Business impact:</b> keep/kill/fix decisions get made on facts, not politics - especially important after a $19.5B write-down.</div>
-          <div class="row"><b>Watch out for:</b> cost data is fragmented across bills of materials, supplier contracts, and accounting - expect messy first drafts and fix them iteratively.</div>
-        </div>
-        <div class="rung r2">
-          <span class="level lvl-2">Core system - 3 to 9 months</span>
-          <div class="rung-title">Tariff &amp; demand "scenario room"</div>
-          <div class="row"><b>What it is:</b> a rolling what-if capability: if tariffs rise/fall, if credits change, if gas prices move, if hybrid demand grows - what should we build, where, and what should we stop?</div>
-          <div class="row"><b>How it works:</b> a quarterly (moving toward monthly) review with pre-agreed decision gates for plants and model lines, so the response is ready before the news.</div>
-          <div class="row"><b>Business impact:</b> fewer emergency pauses and smooths the whiplash that has cost billions in write-downs and charges.</div>
-          <div class="row"><b>Watch out for:</b> assumptions must be transparent and every scenario owned by finance, or the room becomes a debating club.</div>
-        </div>
-        <div class="rung r3">
-          <span class="level lvl-3">Bold move - 9 to 24 months</span>
-          <div class="rung-title">Hybrid-first + software margin</div>
-          <div class="row"><b>What it is:</b> lean into where the money is today (hybrids, trucks, commercial fleets) while capping EV cash burn until unit costs hit target - and grow the software/services layer (driver assistance subscriptions, fleet management, charging) as recurring margin.</div>
-          <div class="row"><b>How it works:</b> every model carries a "capital score," and software attach rates become a reported KPI alongside vehicle sales.</div>
-          <div class="row"><b>Business impact:</b> revenue quality improves - recurring software income per vehicle reduces dependence on one-time metal margins.</div>
-          <div class="row"><b>Watch out for:</b> brand stretch and capability gaps; competitors like Tesla and Rivian already sell software - Ford must price and package it credibly.</div>
-        </div>
-        <div class="rung r4">
-          <span class="level lvl-4">Moonshot - 24+ months</span>
-          <div class="rung-title">Ford as an energy &amp; uptime company</div>
-          <div class="row"><b>What it is:</b> monetize the fleet beyond the sale: vehicle-to-grid programs (parked trucks and vans earning money from utilities), home battery bundles, battery second-life and recycling, and "uptime-as-a-service" where commercial customers pay for guaranteed working trucks, not repairs.</div>
-          <div class="row"><b>How it works:</b> Ford Pro becomes a services platform where the truck is the hardware and recurring contracts are the business - priced and backed by fleet data.</div>
-          <div class="row"><b>Business impact:</b> a new revenue stream that does not depend on selling more vehicles; software-like margins, recurring income, and a natural hedge if EV volume disappoints.</div>
-          <div class="row"><b>Watch out for:</b> utility regulation, upfront capital, and new pricing capabilities - pilot with one fleet in one state before scaling.</div>
-        </div>
+      <div class="rung c"><div class="band"></div>
+        <div class="tier">Core &middot; 3-9 months</div>
+        <h3>Defect smoke alarms</h3>
+        <p>Alerts when failures cluster by batch, plant or model; every software fix verified as installed.</p>
+        <div class="effect"><b>Effect:</b> catch defects before regulators; end repeat recalls.</div>
+        <div class="risk">Watch: false alarms erode trust.</div>
       </div>
-      <div class="callout score"><b>Measures that tell us it is working:</b> contribution margin per vehicle by model, EV loss per unit trend, tariff cost per unit, hybrid/EV/ICE mix vs plan, software &amp; subscription revenue per vehicle, production plan accuracy.</div>
+      <div class="rung b"><div class="band"></div>
+        <div class="tier">Bold &middot; 9-24 months</div>
+        <h3>Vehicle health score</h3>
+        <p>A 1-100 score per vehicle; owners and fleets fix issues before failure. Opt-in.</p>
+        <div class="effect"><b>Effect:</b> fewer breakdowns, stronger service loyalty.</div>
+        <div class="risk">Watch: privacy optics; pilot first.</div>
+      </div>
+      <div class="rung m"><div class="band"></div>
+        <div class="tier">Moonshot &middot; 24+ months</div>
+        <h3>Zero-recall loop</h3>
+        <p>Fleet digital twin tests every change pre-production; bounties pay for early defect reports.</p>
+        <div class="effect"><b>Effect:</b> quality becomes a brand premium again.</div>
+        <div class="risk">Watch: culture, supplier buy-in, legal.</div>
+      </div>
     </div>
+    <div class="track"><b>TRACK &middot;</b> recalls per year &middot; repeat recalls &middot; warranty cost per vehicle &middot; days from signal to action &middot; software-fix success rate</div>
   </section>
 
-  <!-- ============================= THE SYSTEM ============================= -->
-  <section id="system" class="card">
-    <h2>The system behind the solutions <span class="tag">One engine, three uses</span></h2>
-    <p class="lead">The three ladders are not independent projects. The same four layers solve all three problems - which is why a business case for one can be paid for by the others.</p>
-    <div class="system">
-      <div class="layer hot"><div class="l">Layer 1</div><div class="n">One shared truth</div><div class="d">Vehicle signals, warranty notes, supplier status, and per-vehicle costs connected in one place, updated automatically. Everything else depends on this.</div></div>
-      <div class="layer"><div class="l">Layer 2</div><div class="n">Early warnings</div><div class="d">Red/amber/green alerts with owners and playbooks for defects, supplier shocks, and cost overruns - the "smoke detectors."</div></div>
-      <div class="layer"><div class="l">Layer 3</div><div class="n">What-if planning</div><div class="d">Scenario rooms for tariffs, demand, supplier outages, and model profitability - decisions rehearsed before they are needed.</div></div>
-      <div class="layer"><div class="l">Layer 4</div><div class="n">Prevent &amp; monetize</div><div class="d">Proactive vehicle repairs, strategic buffers, energy services, and uptime contracts - turning early information into margin.</div></div>
+  <!-- 02 SUPPLY -->
+  <section class="problem">
+    <div class="p-head">
+      <div>
+        <div class="no">PROBLEM 02</div>
+        <h2>Supply chain shocks</h2>
+      </div>
+      <div class="stat">~1 week<small>F-150 LINE HALT &middot; SEPT 2026</small></div>
     </div>
-    <div class="callout warn"><b>The rule of thumb:</b> no moonshot works without Layer 1. That is why the recommended plan starts with visible, low-cost quick wins that quietly build the shared data foundation for the bolder moves.</div>
+    <p class="situation"><b>One supplier stopped the profit engine:</b> Dearborn and Kansas City idled; the Novelis aluminum fires cost ~$800M in the first half of 2025 alone, ~$1.5B expected in total. <a href="https://finance.yahoo.com/markets/stocks/articles/ford-f-150-supplier-disruption-163352684.html" target="_blank" rel="noopener">Yahoo Finance</a> &middot; <a href="https://www.freep.com/story/money/cars/ford/2026/09/25/ford-f-150-dearborn-truck-production-down/91939468007/" target="_blank" rel="noopener">Detroit Free Press</a></p>
+    <div class="ladder">
+      <div class="rung q"><div class="band"></div>
+        <div class="tier">Quick win &middot; &le;90 days</div>
+        <h3>Supplier weather map</h3>
+        <p>Top 200 parts scored for single-source risk, financial health, hazard exposure and stock on hand.</p>
+        <div class="effect"><b>Effect:</b> the top 20 stop-the-line risks, visible.</div>
+        <div class="risk">Watch: visibility stops at tier one.</div>
+      </div>
+      <div class="rung c"><div class="band"></div>
+        <div class="tier">Core &middot; 3-9 months</div>
+        <h3>Control tower + drills</h3>
+        <p>Live supplier, port and weather signals with playbooks; rehearse the top-20 losses quarterly.</p>
+        <div class="effect"><b>Effect:</b> downtime days become hours; premium freight falls.</div>
+        <div class="risk">Watch: alert fatigue; start at top 50 parts.</div>
+      </div>
+      <div class="rung b"><div class="band"></div>
+        <div class="tier">Bold &middot; 9-24 months</div>
+        <h3>Buffers as insurance</h3>
+        <p>Pay a deliberate premium - stock or second source - where expected loss justifies it.</p>
+        <div class="effect"><b>Effect:</b> small carrying cost, avoided nine-figure shocks.</div>
+        <div class="risk">Watch: capital trade-offs; labor constraints.</div>
+      </div>
+      <div class="rung m"><div class="band"></div>
+        <div class="tier">Moonshot &middot; 24+ months</div>
+        <h3>Shock insurance pool</h3>
+        <p>Price every critical part like an insurer, fund buffers and micro-manufacturing fallbacks.</p>
+        <div class="effect"><b>Effect:</b> on-time trucks in bad years - a selling point.</div>
+        <div class="risk">Watch: complexity; supplier trust.</div>
+      </div>
+    </div>
+    <div class="track"><b>TRACK &middot;</b> downtime hours &middot; premium freight spend &middot; backup coverage on critical parts &middot; days of supply &middot; time-to-recover per supplier</div>
   </section>
 
-  <!-- ============================= SCORECARD ============================= -->
-  <section id="scorecard" class="card">
-    <h2>Priority scorecard <span class="tag">Where to start</span></h2>
-    <p class="lead">Impact = effect on money, risk, or customer trust. Effort = people, systems, and political capital needed. Start with high impact / low effort, fund the bold moves from quick-win credibility.</p>
-    <table>
-      <thead><tr><th>Initiative</th><th>Problem</th><th>Impact</th><th>Effort</th><th>Time to value</th><th>Start now?</th></tr></thead>
-      <tbody>
-        <tr><td>Quality scoreboard (one version of the truth)</td><td>Quality</td><td><span class="pill pil-h">High</span></td><td><span class="pill pil-l">Low</span></td><td>~60 days</td><td><b>Yes - first</b></td></tr>
-        <tr><td>Supplier weather map (top 200 parts)</td><td>Supply chain</td><td><span class="pill pil-h">High</span></td><td><span class="pill pil-l">Low</span></td><td>~60 days</td><td><b>Yes - first</b></td></tr>
-        <tr><td>True profit per vehicle scorecard</td><td>EV &amp; tariffs</td><td><span class="pill pil-h">High</span></td><td><span class="pill pil-m">Medium</span></td><td>~90 days</td><td><b>Yes - first</b></td></tr>
-        <tr><td>Defect smoke detectors + OTA install verification</td><td>Quality</td><td><span class="pill pil-h">High</span></td><td><span class="pill pil-m">Medium</span></td><td>3-6 months</td><td>After scoreboard</td></tr>
-        <tr><td>Supply control tower + shutdown drills</td><td>Supply chain</td><td><span class="pill pil-h">High</span></td><td><span class="pill pil-m">Medium</span></td><td>3-9 months</td><td>After weather map</td></tr>
-        <tr><td>Tariff &amp; demand scenario room</td><td>EV &amp; tariffs</td><td><span class="pill pil-h">High</span></td><td><span class="pill pil-m">Medium</span></td><td>3-6 months</td><td>After margin scorecard</td></tr>
-        <tr><td>Buffer / dual-source "insurance" for top 50 parts</td><td>Supply chain</td><td><span class="pill pil-m">Medium</span></td><td><span class="pill pil-h">High</span></td><td>9-18 months</td><td>Fund after drills</td></tr>
-        <tr><td>Vehicle Health Score pilot (one model, one region)</td><td>Quality</td><td><span class="pill pil-m">Medium</span></td><td><span class="pill pil-h">High</span></td><td>9-18 months</td><td>Pilot design now</td></tr>
-        <tr><td>Hybrid-first + software attach KPIs</td><td>EV &amp; tariffs</td><td><span class="pill pil-h">High</span></td><td><span class="pill pil-m">Medium</span></td><td>6-12 months</td><td>Fold into planning</td></tr>
-        <tr><td>Energy / uptime services pilot (V2G, Pro uptime contracts)</td><td>EV &amp; tariffs</td><td><span class="pill pil-m">Medium</span></td><td><span class="pill pil-h">High</span></td><td>18-36 months</td><td>One-state pilot</td></tr>
-      </tbody>
-    </table>
+  <!-- 03 EV -->
+  <section class="problem">
+    <div class="p-head">
+      <div>
+        <div class="no">PROBLEM 03</div>
+        <h2>EV losses &amp; tariffs</h2>
+      </div>
+      <div class="stat">$11.1B<small>Q4 2025 NET LOSS &middot; LARGEST SINCE 2008</small></div>
+    </div>
+    <p class="situation"><b>The capital-allocation pivot:</b> $4.8B lost on EVs in 2025, a $19.5B write-down, break-even only by 2029 - plus ~$2B in tariffs expected again. <a href="https://nypost.com/2026/02/11/business/ford-ceo-admits-that-the-customer-has-spoken-after-ev-push-drives-major-quarterly-loss/" target="_blank" rel="noopener">NY Post / Fox Business</a></p>
+    <div class="ladder">
+      <div class="rung q"><div class="band"></div>
+        <div class="tier">Quick win &middot; &le;90 days</div>
+        <h3>Profit per vehicle</h3>
+        <p>One monthly scorecard per model and plant: price minus material, tariff, battery, warranty, incentives.</p>
+        <div class="effect"><b>Effect:</b> keep / fix / kill decisions on facts.</div>
+        <div class="risk">Watch: cost data lives in many systems.</div>
+      </div>
+      <div class="rung c"><div class="band"></div>
+        <div class="tier">Core &middot; 3-9 months</div>
+        <h3>Scenario room</h3>
+        <p>Rolling what-ifs on tariffs, credits, demand and gas prices - with pre-agreed plant-level decision gates.</p>
+        <div class="effect"><b>Effect:</b> the response is ready before the news.</div>
+        <div class="risk">Watch: assumptions must be finance-owned.</div>
+      </div>
+      <div class="rung b"><div class="band"></div>
+        <div class="tier">Bold &middot; 9-24 months</div>
+        <h3>Hybrid-first + software margin</h3>
+        <p>Fund where margin is today; cap EV burn; grow subscriptions and fleet services as recurring income.</p>
+        <div class="effect"><b>Effect:</b> less dependence on one-time metal margins.</div>
+        <div class="risk">Watch: capability gaps; credible pricing.</div>
+      </div>
+      <div class="rung m"><div class="band"></div>
+        <div class="tier">Moonshot &middot; 24+ months</div>
+        <h3>Energy &amp; uptime company</h3>
+        <p>Vehicle-to-grid income, battery second life, and uptime-as-a-service for commercial fleets.</p>
+        <div class="effect"><b>Effect:</b> recurring revenue; hedge against EV volume.</div>
+        <div class="risk">Watch: utility regulation; upfront capital.</div>
+      </div>
+    </div>
+    <div class="track"><b>TRACK &middot;</b> margin per vehicle &middot; EV loss per unit &middot; tariff cost per unit &middot; powertrain mix vs plan &middot; software revenue per vehicle</div>
   </section>
 
-  <!-- ============================= ROADMAP ============================= -->
-  <section id="roadmap" class="card">
-    <h2>30 / 60 / 90 day plan <span class="tag">For a new hire or a pilot team</span></h2>
-    <table>
-      <thead><tr><th>Window</th><th>Deliverable</th><th>Owner</th><th>Proof it is done</th></tr></thead>
-      <tbody>
-        <tr><td><b>First 30 days</b></td><td>Quality scoreboard v1 (warranty + repair notes + alerts by model/plant)</td><td>Quality + analytics</td><td>First monthly review held; red items have owners</td></tr>
-        <tr><td><b>First 30 days</b></td><td>Supplier weather map v1 (top 200 parts)</td><td>Procurement + analytics</td><td>Top-20 "stop-the-line" risks documented</td></tr>
-        <tr><td><b>First 30 days</b></td><td>True profit per vehicle v1 (top 5 models)</td><td>Finance + product</td><td>Finance signs off on one cost definition</td></tr>
-        <tr><td><b>Day 60</b></td><td>Defect + supplier alerting pilots live for top risks</td><td>Analytics + engineering</td><td>First defects caught before threshold; drill #1 completed</td></tr>
-        <tr><td><b>Day 60</b></td><td>OTA install verification report</td><td>Software quality</td><td>Install success rate reported per campaign</td></tr>
-        <tr><td><b>Day 60</b></td><td>Tariff scenario room v1 (two live scenarios)</td><td>Finance + strategy</td><td>Decision gates documented for two plants/models</td></tr>
-        <tr><td><b>Day 90</b></td><td>Control tower v1 + buffer strategy for top 20 parts</td><td>Supply chain</td><td>Time-to-recover known for every top-20 supplier</td></tr>
-        <tr><td><b>Day 90</b></td><td>Vehicle Health Score pilot design (one model, one region)</td><td>Quality + Pro</td><td>Pilot scope, consent approach, and success metrics agreed</td></tr>
-        <tr><td><b>Day 90</b></td><td>Quarterly business review of the system</td><td>Executive sponsor</td><td>Costs avoided and margin protected quantified in dollars</td></tr>
-      </tbody>
-    </table>
-  </section>
-
-  <!-- ============================= TALK TRACK ============================= -->
-  <section id="talktrack" class="card">
-    <h2>Talk track for the booth <span class="tag">Business language</span></h2>
-    <div class="qa">
-      <div class="box">
-        <h4>Five things to say</h4>
+  <!-- MATRIX -->
+  <section class="matrix">
+    <div class="sec-label">Prioritization</div>
+    <h2>Where to start</h2>
+    <div class="grid2">
+      <div class="cell top">
+        <div class="axis">High impact &middot; low effort &mdash; start now</div>
         <ul>
-          <li>"Ford's three biggest headaches - recalls, supplier shocks, and EV losses - are all the same problem: information arrives too late to act on."</li>
-          <li>"The fix does not start with a billion-dollar system. It starts with connecting data Ford already owns: warranty claims, connected-car signals, supplier status, and per-vehicle costs."</li>
-          <li>"I have built this pattern before: 70M+ records into one pipeline, then warnings precise enough to improve targeting 25x. Same idea, different industry."</li>
-          <li>"The quick wins are 60-90 day projects: one quality scoreboard, one supplier risk map, one true-margin scorecard. They pay for the bigger plays."</li>
-          <li>"The moonshots - a health score for every vehicle, supply-shock insurance, energy and uptime services - only work after the basics are connected. Sequence matters."</li>
+          <li>Quality scoreboard (Problem 01)</li>
+          <li>Supplier weather map (Problem 02)</li>
         </ul>
       </div>
-      <div class="box">
-        <h4>Questions worth asking</h4>
+      <div class="cell top">
+        <div class="axis">High impact &middot; medium effort &mdash; fund next</div>
         <ul>
-          <li>"With 152 recalls last year, how does the quality team find out about a defect before NHTSA does?"</li>
-          <li>"After the Novelis fires, how deep does Ford's supplier visibility go beyond Tier 1 - and what would make that picture trustworthy for planners?"</li>
-          <li>"When tariffs or credits change mid-quarter, how fast can the plan change with them?"</li>
-          <li>"Which analytics output actually moves capital decisions today - cost per vehicle, demand forecasts, or something else?"</li>
-          <li>"If you could fix one information delay in the next 90 days, which one saves the most money?"</li>
+          <li>Profit per vehicle &middot; scenario room (03)</li>
+          <li>Defect smoke alarms (01)</li>
+          <li>Control tower + drills (02)</li>
+        </ul>
+      </div>
+      <div class="cell">
+        <div class="axis">Medium impact &middot; high effort &mdash; pilot deliberately</div>
+        <ul>
+          <li>Buffers / dual-sourcing, top 50 parts (02)</li>
+          <li>Vehicle health score pilot (01)</li>
+        </ul>
+      </div>
+      <div class="cell">
+        <div class="axis">Long horizon &mdash; one bet at a time</div>
+        <ul>
+          <li class="lt">Shock insurance pool (02)</li>
+          <li class="lt">Energy &amp; uptime services (03)</li>
+          <li class="lt">Zero-recall loop (01)</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <section id="sources" class="card">
-    <h2>Sources</h2>
-    <ul class="plain src">
-      <li>Ford 2025 recalls (152; ~40 reissued software updates): <a href="https://www.cbtnews.com/ford-posts-record-152-recalls-in-2025-but-says-vehicle-quality-is-improving/" target="_blank" rel="noopener noreferrer">CBT News</a></li>
-      <li>F-150 supplier shortage halts Dearborn and Kansas City (Sept 2026): <a href="https://finance.yahoo.com/markets/stocks/articles/ford-f-150-supplier-disruption-163352684.html" target="_blank" rel="noopener noreferrer">Yahoo Finance</a>, <a href="https://www.freep.com/story/money/cars/ford/2026/09/25/ford-f-150-dearborn-truck-production-down/91939468007/" target="_blank" rel="noopener noreferrer">Detroit Free Press</a>, <a href="https://www.detroitnews.com/story/business/autos/ford/2026/09/30/f-150-supplier-disruption-to-hit-3q-sales-ford-ceo-jim-farley-says/92021499007/" target="_blank" rel="noopener noreferrer">Detroit News</a></li>
-      <li>EV losses, $19.5B charge, $2B tariffs, Q4 2025 results: <a href="https://nypost.com/2026/02/11/business/ford-ceo-admits-that-the-customer-has-spoken-after-ev-push-drives-major-quarterly-loss/" target="_blank" rel="noopener noreferrer">NY Post / Fox Business</a>, <a href="https://www.msn.com/en-us/money/top-stocks/history-says-what-ford-stock-has-done-in-the-2-years-after-each-full-year-loss/ar-AA2b9bjH" target="_blank" rel="noopener noreferrer">MSN</a></li>
-      <li>Company context (H-1B history, roles, values): internal briefing research, SASE STEM Connect 26 partner pages, h1bdata.info</li>
-    </ul>
-    <p class="muted">This is an independent preparation briefing built from public reporting; figures are as reported and should be confirmed before quoting externally.</p>
+  <!-- ROADMAP -->
+  <section class="roadmap">
+    <div class="sec-label">Execution</div>
+    <h2>The first 90 days</h2>
+    <div class="timeline">
+      <div class="phase">
+        <div class="when">30<small>DAYS</small></div>
+        <ul>
+          <li>Quality scoreboard v1 - first review held</li>
+          <li>Supplier weather map v1 - top 200 parts</li>
+          <li>Profit per vehicle v1 - top five models</li>
+        </ul>
+      </div>
+      <div class="phase">
+        <div class="when">60<small>DAYS</small></div>
+        <ul>
+          <li>Defect and supplier alerting pilots live</li>
+          <li>Software-fix verification report</li>
+          <li>Scenario room v1 - two live scenarios</li>
+        </ul>
+      </div>
+      <div class="phase">
+        <div class="when">90<small>DAYS</small></div>
+        <ul>
+          <li>Control tower v1; buffer plan for top 20</li>
+          <li>Health-score pilot design agreed</li>
+          <li>Executive review: dollars avoided, quantified</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
-  <footer>Prepared for SASE STEM Connect 26 (Seattle, Oct 2026) - companion to the STEMConnect26 company briefing dashboard.</footer>
+  <!-- TALK -->
+  <section class="talk">
+    <div class="sec-label">At the booth</div>
+    <h2>What to say, what to ask</h2>
+    <div class="columns">
+      <div class="col">
+        <h3>Say</h3>
+        <div class="quote">"Recalls, supply shocks and EV losses are one problem: the signal reaches decision-makers too late."</div>
+        <div class="quote">"The fix starts with data Ford already owns - warranty claims, vehicle signals, supplier status, per-vehicle cost."</div>
+        <div class="quote">"Quick wins in 60-90 days fund the bolder plays. Sequence matters more than budget."</div>
+      </div>
+      <div class="col">
+        <h3>Ask</h3>
+        <div class="ask"><b>Quality:</b> How does the team learn about a defect before NHTSA does?</div>
+        <div class="ask"><b>Supply:</b> How deep does supplier visibility go beyond tier one?</div>
+        <div class="ask"><b>EV:</b> When tariffs move mid-quarter, how fast does the plan move with them?</div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="sources">
+    <b>SOURCE NOTES.</b>
+    Recalls: <a href="https://www.cbtnews.com/ford-posts-record-152-recalls-in-2025-but-says-vehicle-quality-is-improving/" target="_blank" rel="noopener">CBT News</a> &middot;
+    F-150 halt / Novelis: <a href="https://finance.yahoo.com/markets/stocks/articles/ford-f-150-supplier-disruption-163352684.html" target="_blank" rel="noopener">Yahoo Finance</a>, <a href="https://www.freep.com/story/money/cars/ford/2026/09/25/ford-f-150-dearborn-truck-production-down/91939468007/" target="_blank" rel="noopener">Detroit Free Press</a>, <a href="https://www.detroitnews.com/story/business/autos/ford/2026/09/30/f-150-supplier-disruption-to-hit-3q-sales-ford-ceo-jim-farley-says/92021499007/" target="_blank" rel="noopener">Detroit News</a> &middot;
+    EV / tariffs / Q4 2025: <a href="https://nypost.com/2026/02/11/business/ford-ceo-admits-that-the-customer-has-spoken-after-ev-push-drives-major-quarterly-loss/" target="_blank" rel="noopener">NY Post / Fox Business</a>
+    <div class="note">Independent preparation briefing built from public reporting; figures as reported. Confirm before quoting externally.</div>
+  </footer>
+
 </div>
 </body>
 </html>
