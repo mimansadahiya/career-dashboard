@@ -7823,7 +7823,10 @@ function scVisaCell(c) {
   return '<div class="sc-visa ' + scVisaClass(c.h1b_sponsorship) + '">&#128706; ' + scEsc(c.h1b_sponsorship) + '</div>' + warn;
 }
 function scLinksCell(c, i) {
-  return '<div class="sc-links" style="flex-direction:column; align-items:flex-start;">' + scLinks(c) + '</div>' +
+  const deep = (c.company === 'Ford Motor Company')
+    ? '<a href="ford_briefing.html" style="background:var(--blue-bg); color:var(--blue-txt); border-color:#bfdbfe;">Ford business briefing</a>'
+    : '';
+  return '<div class="sc-links" style="flex-direction:column; align-items:flex-start;">' + deep + scLinks(c) + '</div>' +
     '<div class="sc-booth" style="margin-top:5px;">&#128205; ' + scEsc(c.booth || 'Booth TBD') + '</div>' +
     '<span class="sc-toggle" onclick="scToggleDetail(' + i + ', this)">+ Fit &amp; talk track</span>';
 }

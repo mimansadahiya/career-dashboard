@@ -119,6 +119,7 @@ const THEMES = [
   { name: 'Capital / cost constraints', kw: ['capex', 'capital', 'budget', 'upgrade', 'cost', 'cash'] }
 ];
 const state = { view: 'companies', company: 'all', q: '' };
+const DEEP_DIVE = { 'Ford Motor Company': 'ford_briefing.html' };
 let reviewed;
 try { reviewed = new Set(JSON.parse(localStorage.getItem('sc26briefReviewed') || '[]')); } catch (e) { reviewed = new Set(); }
 
@@ -175,6 +176,7 @@ function snapshotHTML(c) {
     '<span class="visa-line' + (warn ? ' warn' : '') + '">' + esc(c.h1b_sponsorship) + '</span>' +
     (warn ? '<span class="visa-line warn">' + esc(c.us_person_required) + '</span>' : '') +
     '<span class="snap-links">' +
+      (DEEP_DIVE[c.company] ? '<a href="' + DEEP_DIVE[c.company] + '" style="background:var(--blue-bg); color:var(--blue-txt); border-color:#bfdbfe;">Business briefing</a>' : '') +
       (c.website ? '<a href="' + esc(c.website) + '" target="_blank" rel="noopener noreferrer">Website</a>' : '') +
       (c.careers_url ? '<a href="' + esc(c.careers_url) + '" target="_blank" rel="noopener noreferrer">Careers</a>' : '') +
       (c.job_search_url ? '<a href="' + esc(c.job_search_url) + '" target="_blank" rel="noopener noreferrer">Data roles</a>' : '') +
