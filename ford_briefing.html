@@ -132,10 +132,21 @@
   .sources b { color: var(--muted); letter-spacing: .06em; }
   .sources .note { margin-top: 10px; }
 
+  .plan-toggle { margin-top: 22px; display: inline-flex; align-items: center; gap: 9px; background: var(--ford-blue); color: #fff; border: 0; border-radius: 999px; padding: 11px 20px; font-size: 14px; font-weight: 700; font-family: inherit; cursor: pointer; transition: background .15s, transform .15s; }
+  .plan-toggle:hover { background: #0356c4; transform: translateY(-1px); }
+  .plan-toggle .chev { font-size: 11px; transition: transform .2s; }
+  .plan-toggle[aria-expanded="true"] .chev { transform: rotate(180deg); }
+  .plan { display: none; }
+  .plan.open { display: block; animation: fadeIn .25s ease; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+  .plan .ladder { margin-top: 18px; }
+
   svg { display: block; }
 
   @media print {
     body { font-size: 12px; }
+    .plan { display: block !important; }
+    .plan-toggle { display: none; }
     .hero { background: #fff !important; color: var(--ink); padding: 0 0 18px; }
     .hero .kicker, .hero .tagline, .hero .meta, .kpi .l { color: var(--muted); }
     .hero h1 span { color: var(--ford-blue); }
@@ -222,6 +233,8 @@
     </div>
     <div class="inone"><b>In one sentence:</b> Ford had to bring vehicles back to dealers for safety fixes 152 times in 2025 — the most of any carmaker in a single year — and about 40 of those were repeat notices for software fixes that were sent out but never confirmed as installed.</div>
     <p class="situation">A <b>recall</b> means the carmaker calls vehicles back to a dealership for a safety repair, paid for by Ford. Ford has doubled its safety team and says warranty costs are easing, but the failures still fill dealer repair bays and leave some new vehicles stuck at factories. <a href="https://www.cbtnews.com/ford-posts-record-152-recalls-in-2025-but-says-vehicle-quality-is-improving/" target="_blank" rel="noopener">CBT News</a></p>
+    <button class="plan-toggle" data-target="plan1" aria-expanded="false"><span class="lbl">Show the plan &mdash; 4 levels</span><span class="chev">&#9662;</span></button>
+    <div class="plan" id="plan1">
     <div class="ladder">
       <div class="rung q">
         <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
@@ -257,6 +270,7 @@
       </div>
     </div>
     <div class="track"><b>Watch these numbers:</b> recalls per year &middot; repeat recalls &middot; warranty cost per vehicle &middot; days from first sign to action &middot; share of software fixes confirmed installed</div>
+    </div>
   </section>
 
   <section class="problem">
@@ -269,6 +283,8 @@
     </div>
     <div class="inone"><b>In one sentence:</b> One missing part shut down the factories that build the F-150 — America's best-selling truck — for about a week in September 2026, and with the 2025 fires at an aluminum supplier, the total bill is expected to reach about $1.5B.</div>
     <p class="situation">The shutdown hit the Dearborn and Kansas City plants. The aluminum fires cost about $800M in the first half of 2025 alone. <a href="https://finance.yahoo.com/markets/stocks/articles/ford-f-150-supplier-disruption-163352684.html" target="_blank" rel="noopener">Yahoo Finance</a> &middot; <a href="https://www.freep.com/story/money/cars/ford/2026/09/25/ford-f-150-dearborn-truck-production-down/91939468007/" target="_blank" rel="noopener">Detroit Free Press</a></p>
+    <button class="plan-toggle" data-target="plan2" aria-expanded="false"><span class="lbl">Show the plan &mdash; 4 levels</span><span class="chev">&#9662;</span></button>
+    <div class="plan" id="plan2">
     <div class="ladder">
       <div class="rung q">
         <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
@@ -304,6 +320,7 @@
       </div>
     </div>
     <div class="track"><b>Watch these numbers:</b> plant downtime hours &middot; rush shipping spend &middot; share of critical parts with a backup &middot; days of stock on hand &middot; estimated recovery time per supplier</div>
+    </div>
   </section>
 
   <section class="problem">
@@ -316,6 +333,8 @@
     </div>
     <div class="inone"><b>In one sentence:</b> Ford lost $4.8B on electric vehicles in 2025 and wrote off $19.5B of EV investments — so it is rethinking where to spend — while import taxes (tariffs) cost about $2B in 2025 and are expected to repeat in 2026.</div>
     <p class="situation">A <b>write-off</b> is an accounting way of admitting an investment is now worth less; it hits reported profit. Ford now expects $4B-$4.5B more EV losses in 2026 and aims for EV break-even in 2029. <a href="https://nypost.com/2026/02/11/business/ford-ceo-admits-that-the-customer-has-spoken-after-ev-push-drives-major-quarterly-loss/" target="_blank" rel="noopener">NY Post / Fox Business</a></p>
+    <button class="plan-toggle" data-target="plan3" aria-expanded="false"><span class="lbl">Show the plan &mdash; 4 levels</span><span class="chev">&#9662;</span></button>
+    <div class="plan" id="plan3">
     <div class="ladder">
       <div class="rung q">
         <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
@@ -351,6 +370,7 @@
       </div>
     </div>
     <div class="track"><b>Watch these numbers:</b> profit per vehicle &middot; EV loss per vehicle &middot; tariff cost per vehicle &middot; mix of hybrid, electric and gas vs plan &middot; software revenue per vehicle</div>
+    </div>
   </section>
 
   <section class="block" style="border-bottom:1px solid var(--rule); padding-bottom:34px;">
@@ -462,5 +482,17 @@
   </footer>
 
 </div>
+<script>
+  document.querySelectorAll('.plan-toggle').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var plan = document.getElementById(btn.dataset.target);
+      if (!plan) return;
+      var open = plan.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      var lbl = btn.querySelector('.lbl');
+      if (lbl) lbl.textContent = open ? 'Hide the plan' : 'Show the plan \u2014 4 levels';
+    });
+  });
+</script>
 </body>
 </html>
