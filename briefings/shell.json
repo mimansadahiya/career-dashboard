@@ -1,0 +1,173 @@
+{
+ "slug": "shell",
+ "company": "Shell",
+ "tagline": "Trading wins, chemicals lose, and the strategy swings back to oil.",
+ "colors": {
+  "primary": "#092949",
+  "dark": "#051d33",
+  "accent": "#ffc800",
+  "ink": "#00142E"
+ },
+ "kpis": [
+  {
+   "n": "$9.84B",
+   "l": "Q2 2026 profit — trading-led"
+  },
+  {
+   "n": "17%",
+   "l": "of Qatar LNG capacity knocked out for up to 5 years"
+  },
+  {
+   "n": "$3.5B",
+   "l": "buyback that wobbled on chemicals losses"
+  },
+  {
+   "n": "$16.5B",
+   "l": "ARC Resources deal including debt"
+  }
+ ],
+ "lead_thesis": "Shell earns from volatility it can't control while chemicals bleeds and the plan flips back to hydrocarbons.",
+ "lead_support": "LNG is natural gas shipped cold by tanker. A buyback is the company buying its own shares. The fix: cost and margin visibility per plant, per cargo.",
+ "problems": [
+  {
+   "kicker": "Problem 01 · LNG",
+   "heading": "A war knocked out 17% of Qatar's LNG — Shell trades the swings",
+   "stat": {
+    "n": "65%",
+    "cap": "projected LNG demand growth by 2050"
+   },
+   "fact": "Q2 2026 profit more than doubled to $9.84B on trading and refining; Strait of Hormuz recovery is still uncertain.",
+   "sources": [
+    {
+     "label": "LNG Prime",
+     "url": "https://lngprime.com/europe/shells-q2-profit-jumps-to-9-84-billion-lng-sales-up/194067/"
+    },
+    {
+     "label": "Reuters energy coverage",
+     "url": "https://www.reuters.com/business/energy/"
+    }
+   ],
+   "calls": [
+    {
+     "tier": "Do now",
+     "heading": "Rank every cargo by margin-at-risk, daily",
+     "sub": "Know the best reroute before sailing."
+    },
+    {
+     "tier": "This quarter",
+     "heading": "Buy flexible landing slots, not fixed routes",
+     "sub": "Options beat schedules in a shock."
+    },
+    {
+     "tier": "Big call",
+     "heading": "Take more LNG Canada volume while rivals pause",
+     "sub": "Cheap when the strait is shut."
+    },
+    {
+     "tier": "Crazy",
+     "heading": "Buy floating storage to bank the glut",
+     "sub": "Sell into the next spike."
+    }
+   ]
+  },
+  {
+   "kicker": "Problem 02 · Chemicals",
+   "heading": "Chemicals lost money — the $3.5B buyback wobbled",
+   "stat": {
+    "n": "$24–26B",
+    "cap": "2026 capex plan"
+   },
+   "fact": "A February 2026 profit miss and a two-month buyback pause tied to a legal circular; trading profits masked the weak plants.",
+   "sources": [
+    {
+     "label": "BOE Report: buyback pause",
+     "url": "https://boereport.com/2026/06/12/shell-announces-pause-in-share-buyback-programme/"
+    },
+    {
+     "label": "Shell news (Google)",
+     "url": "https://news.google.com/rss/search?q=Shell+plc+2026&hl=en-US&gl=US&ceid=US:en"
+    }
+   ],
+   "calls": [
+    {
+     "tier": "Do now",
+     "heading": "Show profit per plant, per product, monthly",
+     "sub": "Stop hiding losses in averages."
+    },
+    {
+     "tier": "This quarter",
+     "heading": "Sell or close the two worst sites",
+     "sub": "No credible fix, no future."
+    },
+    {
+     "tier": "Big call",
+     "heading": "Buybacks only after the cash lands",
+     "sub": "Reward cash, not forecasts."
+    },
+    {
+     "tier": "Crazy",
+     "heading": "Turn the sites into power hubs",
+     "sub": "Use land and grid links for data or energy."
+    }
+   ]
+  },
+  {
+   "kicker": "Problem 03 · Strategy",
+   "heading": "Shell doubled back to oil — $16.5B for ARC Resources",
+   "stat": {
+    "n": "$16.5B",
+    "cap": "ARC deal incl. debt, closed Sept 2026"
+   },
+   "fact": "Meanwhile it sold Sprng Energy and its European renewables portfolio to TotalEnergies and took FID on LNG Canada Phase 2.",
+   "sources": [
+    {
+     "label": "Shell news (Google)",
+     "url": "https://news.google.com/rss/search?q=Shell+plc+2026&hl=en-US&gl=US&ceid=US:en"
+    }
+   ],
+   "calls": [
+    {
+     "tier": "Do now",
+     "heading": "One page per asset: cash return and emissions",
+     "sub": "Same numbers for investors and regulators."
+    },
+    {
+     "tier": "This quarter",
+     "heading": "Stress every project at $60 oil",
+     "sub": "If it only works at $90, kill it."
+    },
+    {
+     "tier": "Big call",
+     "heading": "Keep the best renewables, sell the rest",
+     "sub": "No trophy assets, no stranded costs."
+    },
+    {
+     "tier": "Crazy",
+     "heading": "Spin out the transition unit as its own company",
+     "sub": "Let the market fund the pivot."
+    }
+   ]
+  }
+ ],
+ "booth": {
+  "say": "Shell makes money on volatility — so the edge is seeing price, cost and carbon sooner than the market.",
+  "ask": [
+   "How do the trading desk and the plants share the same price view?",
+   "Which chemical sites still lack per-product margin visibility?"
+  ]
+ },
+ "sources": [
+  {
+   "label": "LNG Prime Q2 2026",
+   "url": "https://lngprime.com/europe/shells-q2-profit-jumps-to-9-84-billion-lng-sales-up/194067/"
+  },
+  {
+   "label": "BOE Report buyback pause",
+   "url": "https://boereport.com/2026/06/12/shell-announces-pause-in-share-buyback-programme/"
+  },
+  {
+   "label": "Shell news (Google)",
+   "url": "https://news.google.com/rss/search?q=Shell+plc+2026&hl=en-US&gl=US&ceid=US:en"
+  }
+ ]
+}

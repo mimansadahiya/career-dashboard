@@ -1,0 +1,177 @@
+{
+ "slug": "bnsf",
+ "company": "BNSF Railway",
+ "tagline": "More freight, thinner profit, a rival mega-merger, and coal fading.",
+ "colors": {
+  "primary": "#f85d13",
+  "dark": "#425767",
+  "accent": "#f7b512",
+  "ink": "#00142E"
+ },
+ "kpis": [
+  {
+   "n": "$6.6B",
+   "l": "Q2 2026 revenue, up 15%"
+  },
+  {
+   "n": "16%",
+   "l": "cost jump — fuel alone rose 68%"
+  },
+  {
+   "n": "$85B",
+   "l": "Union Pacific–Norfolk Southern deal on the table"
+  },
+  {
+   "n": "−8%",
+   "l": "coal volume; intermodal grew 9%"
+  }
+ ],
+ "lead_thesis": "BNSF's trains are fuller but its profit per haul is shrinking: costs grew faster than revenue, a rival merger could redraw the map, and coal keeps fading.",
+ "lead_support": "Operating ratio means cost as a share of revenue — lower is better. The fix starts with per-route cost and demand forecasts, not new locomotives.",
+ "problems": [
+  {
+   "kicker": "Problem 01 · Costs",
+   "heading": "Revenue rose 15% but costs rose 16% — profit per haul shrank",
+   "stat": {
+    "n": "68%",
+    "cap": "Q2 2026 fuel cost jump"
+   },
+   "fact": "Volume grew 7% to 2.5M units and the operating ratio still worsened 0.6 points; fuel hit $1.2B and pay $1.4B.",
+   "sources": [
+    {
+     "label": "Progressive Railroading, Q2 2026",
+     "url": "https://www.progressiverailroading.com/bnsf_railway/news/BNSF-scores-more-revenue-income-and-volume-in-second-quarter--77514"
+    },
+    {
+     "label": "BNSF Q2 2026 summary (PDF)",
+     "url": "https://www.bnsf.com/about-bnsf/financial-information/pdf/performance-summary-q2-2026.pdf"
+    }
+   ],
+   "calls": [
+    {
+     "tier": "Do now",
+     "heading": "Show cost per carload on every corridor",
+     "sub": "No hiding in network averages."
+    },
+    {
+     "tier": "This quarter",
+     "heading": "Fix the worst 10% fuel-burning trains",
+     "sub": "Makeup, speed and idling — attack the tail."
+    },
+    {
+     "tier": "Big call",
+     "heading": "Freeze capex until cost per carload falls",
+     "sub": "$3.6B budget; tie dollars to savings."
+    },
+    {
+     "tier": "Crazy",
+     "heading": "Pay crews a share of fuel saved",
+     "sub": "Union deal: split the winnings."
+    }
+   ]
+  },
+  {
+   "kicker": "Problem 02 · Merger",
+   "heading": "An $85B rival merger could redraw every BNSF route",
+   "stat": {
+    "n": "$85B",
+    "cap": "UP–NS deal under review"
+   },
+   "fact": "The Surface Transportation Board set a schedule in August 2026 and denied quick-kill motions in September; BNSF is pressing for access conditions.",
+   "sources": [
+    {
+     "label": "STB latest news",
+     "url": "https://www.stb.gov/news-communications/latest-news/"
+    },
+    {
+     "label": "BNSF merger page",
+     "url": "https://www.bnsf.com/merger"
+    }
+   ],
+   "calls": [
+    {
+     "tier": "Do now",
+     "heading": "Build the traffic-diversion model",
+     "sub": "Know which lanes flee, gateway by gateway."
+    },
+    {
+     "tier": "This quarter",
+     "heading": "Price the 20 gateways that matter most",
+     "sub": "Revenue at stake, lane by lane."
+    },
+    {
+     "tier": "Big call",
+     "heading": "Offer shippers binding access guarantees",
+     "sub": "Win customers before the merger closes."
+    },
+    {
+     "tier": "Crazy",
+     "heading": "Propose an open-access alliance",
+     "sub": "Turn a defensive fight into a new network."
+    }
+   ]
+  },
+  {
+   "kicker": "Problem 03 · Coal",
+   "heading": "Coal volume fell 8% — the only shrinking business",
+   "stat": {
+    "n": "−8%",
+    "cap": "Coal units, Q2 2026"
+   },
+   "fact": "Retirements and cheap gas drove the drop; coal revenue still rose 1% to $722M on price, while intermodal grew 9%.",
+   "sources": [
+    {
+     "label": "Progressive Railroading, Q2 2026",
+     "url": "https://www.progressiverailroading.com/bnsf_railway/news/BNSF-scores-more-revenue-income-and-volume-in-second-quarter--77514"
+    }
+   ],
+   "calls": [
+    {
+     "tier": "Do now",
+     "heading": "Date every coal plant's closure",
+     "sub": "Treat shutdowns like churn — plant by plant."
+    },
+    {
+     "tier": "This quarter",
+     "heading": "Move hoppers and crews to intermodal now",
+     "sub": "Grow with the 9% winner."
+    },
+    {
+     "tier": "Big call",
+     "heading": "Reprice coal contracts with minimum volumes",
+     "sub": "Get paid when plants run less."
+    },
+    {
+     "tier": "Crazy",
+     "heading": "Build rail links for AI data centers",
+     "sub": "New heavy freight: power, fuel, equipment."
+    }
+   ]
+  }
+ ],
+ "booth": {
+  "say": "BNSF's problem is speed of information: costs, competitors and coal shift faster than the plan.",
+  "ask": [
+   "How do you see cost per carload today — network average or per train?",
+   "Where does BNSF's coal forecast live, and who updates it?"
+  ]
+ },
+ "sources": [
+  {
+   "label": "Progressive Railroading Q2 2026",
+   "url": "https://www.progressiverailroading.com/bnsf_railway/news/BNSF-scores-more-revenue-income-and-volume-in-second-quarter--77514"
+  },
+  {
+   "label": "BNSF 2026 capex",
+   "url": "https://www.progressiverailroading.com/bnsf_railway/news/BNSF-budgets-36B-for-capital-expenditures-in-2026--76238"
+  },
+  {
+   "label": "BNSF Q2 2026 summary",
+   "url": "https://www.bnsf.com/about-bnsf/financial-information/pdf/performance-summary-q2-2026.pdf"
+  },
+  {
+   "label": "STB news",
+   "url": "https://www.stb.gov/news-communications/latest-news/"
+  }
+ ]
+}

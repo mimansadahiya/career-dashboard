@@ -1,0 +1,161 @@
+{
+ "slug": "dtna",
+ "company": "Daimler Truck North America",
+ "tagline": "Tariff swings, electric trucks that don't pencil yet, software on the road.",
+ "colors": {
+  "primary": "#000000",
+  "dark": "#111111",
+  "accent": "#ffff40",
+  "ink": "#000000"
+ },
+ "kpis": [
+  {
+   "n": "25%",
+   "l": "US tariff on imported trucks (Nov 2025)"
+  },
+  {
+   "n": "−39% → +85%",
+   "l": "Q3 2025 sales drop, then Q1 2026 orders"
+  },
+  {
+   "n": "330K",
+   "l": "trucks touched by one over-the-air fix"
+  },
+  {
+   "n": "2029",
+   "l": "largest US truck plant planned"
+  }
+ ],
+ "lead_thesis": "DTNA's market swings from a 39% sales drop to an 85% order surge while tariffs and charging gaps reshape the business.",
+ "lead_support": "Pre-buy means customers ordering early to beat price hikes, which distorts demand. TCO is total cost to own and run a truck. The fix: strip noise from forecasts and track every truck in the field.",
+ "problems": [
+  {
+   "kicker": "Problem 01 · Tariffs",
+   "heading": "A 25% truck tariff flipped sales from −39% to +85% orders",
+   "stat": {
+    "n": "25%",
+    "cap": "US tariff on imported trucks"
+   },
+   "fact": "Profit halved by May 2026 on tariffs and weak demand; by August 2026 guidance was raised as buyers ordered ahead of price hikes.",
+   "sources": [
+    {
+     "label": "Reuters via Google News",
+     "url": "https://news.google.com/rss/search?q=Daimler+Truck+tariffs+2026&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+     "label": "Trucking Dive",
+     "url": "https://www.truckingdive.com/"
+    }
+   ],
+   "calls": [
+    {
+     "tier": "Do now",
+     "heading": "Strip pre-buy noise from the order book",
+     "sub": "Distorted orders mislead the plants."
+    },
+    {
+     "tier": "This quarter",
+     "heading": "Price tariffs into every quote, weekly",
+     "sub": "No margin surprises at delivery."
+    },
+    {
+     "tier": "Big call",
+     "heading": "Speed up the US plant — own the tariff math",
+     "sub": "Local production beats border taxes."
+    },
+    {
+     "tier": "Crazy",
+     "heading": "Rent trucks by the mile",
+     "sub": "Earn on freight cycles, not sales cycles."
+    }
+   ]
+  },
+  {
+   "kicker": "Problem 02 · Electric",
+   "heading": "Electric trucks work — the chargers don't",
+   "stat": {
+    "n": "1M",
+    "cap": "Schneider's electric eCascadia miles"
+   },
+   "fact": "The CEO calls the charger shortage a top concern; Greenlane added a second charging corridor in August 2025, but coverage gaps and depot costs remain.",
+   "sources": [
+    {
+     "label": "Transport Topics via Google News",
+     "url": "https://news.google.com/rss/search?q=electric+truck+charging+DTNA&hl=en-US&gl=US&ceid=US:en"
+    }
+   ],
+   "calls": [
+    {
+     "tier": "Do now",
+     "heading": "Publish range and cost per route from telemetry",
+     "sub": "Show exactly where electric wins."
+    },
+    {
+     "tier": "This quarter",
+     "heading": "Bundle chargers with every e-truck quote",
+     "sub": "No sale without a place to plug in."
+    },
+    {
+     "tier": "Big call",
+     "heading": "Fund 20 company charging depots",
+     "sub": "Own the bottleneck; sell the fuel."
+    },
+    {
+     "tier": "Crazy",
+     "heading": "Lease batteries for life, sell miles",
+     "sub": "Recurring revenue like a phone plan."
+    }
+   ]
+  },
+  {
+   "kicker": "Problem 03 · Software",
+   "heading": "One software fix touched 330,000 trucks in the field",
+   "stat": {
+    "n": "330K",
+    "cap": "DEF limp-mode fix, 2026"
+   },
+   "fact": "DTNA is also betting on the full autonomous stack while closing the Portland plant (375 layoffs) and planning the largest US heavy-truck plant by 2029.",
+   "sources": [
+    {
+     "label": "FreightWaves via Google News",
+     "url": "https://news.google.com/rss/search?q=Daimler+Truck+software+autonomous+2026&hl=en-US&gl=US&ceid=US:en"
+    }
+   ],
+   "calls": [
+    {
+     "tier": "Do now",
+     "heading": "Confirm every software fix, per truck",
+     "sub": "No more hoping updates land."
+    },
+    {
+     "tier": "This quarter",
+     "heading": "Flag repeat repairs after each update",
+     "sub": "Find the trucks the fix missed."
+    },
+    {
+     "tier": "Big call",
+     "heading": "Sell uptime, not repairs",
+     "sub": "Fleets pay for guaranteed miles."
+    },
+    {
+     "tier": "Crazy",
+     "heading": "Run freight for customers",
+     "sub": "Own the road, not just the truck."
+    }
+   ]
+  }
+ ],
+ "booth": {
+  "say": "DTNA's challenge is seeing the cycle first: orders, chargers and warranties all send signals before the quarter does.",
+  "ask": [
+   "How is tariff and pre-buy noise separated in the forecast?",
+   "Who owns telemetry data from 330,000 trucks today?"
+  ]
+ },
+ "sources": [
+  {
+   "label": "Daimler Truck news (Google)",
+   "url": "https://news.google.com/rss/search?q=Daimler+Truck+North+America+2026&hl=en-US&gl=US&ceid=US:en"
+  }
+ ]
+}

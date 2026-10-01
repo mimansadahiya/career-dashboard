@@ -1,0 +1,96 @@
+{
+  "company": "Chevron",
+  "tagline": "Record profits, deepest layoffs, drones on the export route.",
+  "kpis": [
+    {"n": "$12.0B", "l": "Q2 2026 adjusted earnings, six-year high"},
+    {"n": "4.07M", "l": "barrels of oil equivalent produced daily"},
+    {"n": "9,000", "l": "jobs cut in 15-20% workforce reduction"},
+    {"n": "$53B", "l": "Hess acquisition closed after Exxon arbitration win"}
+  ],
+  "lead_thesis": "Chevron's record quarter rests on war-driven oil prices, yet every Kazakh barrel still exits through one exposed artery: Tengiz to the Black Sea. The fix is redundancy in power, routes and people, not deeper cuts that hollow out the operators keeping barrels moving.",
+  "lead_support": "CPC (Caspian Pipeline Consortium) is the pipeline system that carries Kazakh crude to a Black Sea terminal. When drones hit tankers there, Tengiz, Chevron's 50%-owned supergiant field, cannot sell what it pumps.",
+  "problems": [
+    {
+      "kicker": "Problem 01 · Operations",
+      "heading": "A single power failure shut in Chevron's 860,000-barrel-a-day Tengiz field",
+      "stat": {"n": "60%", "cap": "Tengiz output recovered to 60% of normal by Feb 9"},
+      "fact": "Tengizchevroil halted Tengiz and Korolev on Jan 19, 2026 after a fire in a turbine transformer hit power distribution.",
+      "sources": [
+        {"label": "Offshore Engineer: Tengiz halts after fire", "url": "https://www.oedigital.com/news/534582-kazakhstan-s-chevron-led-tengiz-field-halts-production-after-fire"},
+        {"label": "Reuters: Tengiz back to 60% of usual output", "url": "https://www.reuters.com/business/energy/chevrons-tengiz-oilfield-back-60-usual-output-two-sources-say-2026-02-09/"},
+        {"label": "Reuters: Kazakhstan says Chevron promises reliable, safe Tengiz", "url": "https://www.reuters.com/business/energy/kazakhstan-says-chevron-promises-tengiz-will-be-operated-reliably-safely-2026-01-29/"}
+      ],
+      "calls": [
+        {"tier": "Do now", "heading": "Audit every Tengiz transformer this week", "sub": "Replace the weak ones before winter demand peaks."},
+        {"tier": "This quarter", "heading": "Build islanded backup power for TCO", "sub": "Keep 860,000 barrels flowing through the next failure."},
+        {"tier": "Big call", "heading": "Publish Tengiz uptime every single month", "sub": "Public scorecards force operators to fix what quarters hide."},
+        {"tier": "Crazy", "heading": "Buy mobile turbines and park them in Kazakhstan", "sub": "Own the reserve; never rent reliability again."}
+      ]
+    },
+    {
+      "kicker": "Problem 02 · Supply Risk",
+      "heading": "Six tanker attacks cut Kazakhstan's oil output 21%",
+      "stat": {"n": "56%", "cap": "Tengiz production drop when CPC stopped loadings"},
+      "fact": "Attacks hit the Chevron-chartered Yasa Polaris on July 7; output fell to 1.63M bpd from a 2.07M July average.",
+      "sources": [
+        {"label": "Times of Central Asia: output falls 21%, Tengiz more than halves", "url": "https://timesca.com/kazakhstan-oil-output-falls-21-as-cpc-halt-more-than-halves-tengiz-production/"},
+        {"label": "Reuters: Kazakhstan output plummets after drone attacks", "url": "https://www.reuters.com/business/energy/kazakhstans-oil-output-plummets-after-drone-attacks-forced-exporting-terminal-2026-07-23/"},
+        {"label": "Reuters: Chevron tanker hit by drone in Black Sea", "url": "https://www.reuters.com/business/energy/chevron-tanker-used-cpc-oil-hit-by-drone-black-sea-2026-07-08/"},
+        {"label": "Upstream: Kazakh exports halted again after tanker strikes", "url": "https://www.upstreamonline.com/energy-security/kazakh-oil-exports-halted-again-after-more-black-sea-tanker-strikes/2-1-2022673"}
+      ],
+      "calls": [
+        {"tier": "Do now", "heading": "Insure every CPC tanker or stop sailing", "sub": "War-risk premiums cost less than a lost cargo."},
+        {"tier": "This quarter", "heading": "Push Kazakh barrels east to China", "sub": "Use the existing pipeline before the Black Sea closes."},
+        {"tier": "Big call", "heading": "Fund private drone defense for the terminal", "sub": "If the sea is unsafe, pay to make it safe."},
+        {"tier": "Crazy", "heading": "Build a Caspian-to-Europe bypass route", "sub": "Spend billions now, celebrate when drones return."}
+      ]
+    },
+    {
+      "kicker": "Problem 03 · Financial Strategy",
+      "heading": "Chevron is cutting up to 9,000 jobs after its best quarter in six years",
+      "stat": {"n": "$2-3B", "cap": "cost cuts targeted by end of 2026"},
+      "fact": "The 15-20% cut means more than 9,000 layoffs on 2023 headcount; Q2 2026 adjusted earnings hit $12.0B.",
+      "sources": [
+        {"label": "CNBC: Chevron slashes up to 20% of workforce", "url": "https://www.cnbc.com/2025/02/12/chevron-will-slash-up-to-20percent-of-its-workforce-as-part-of-cost-cutting-plan.html"},
+        {"label": "Reuters: Chevron to lay off up to 20% of global workforce", "url": "https://www.reuters.com/business/energy/chevron-announces-15-20-layoff-global-workforce-source-says-2025-02-12/"},
+        {"label": "Chevron investors: 2Q 2026 results and metrics", "url": "https://www.chevron.com/investors"},
+        {"label": "Reuters: highest quarterly profit in six years", "url": "https://www.reuters.com/business/energy/chevron-records-highest-quarterly-profit-six-years-beating-analyst-estimates-2026-07-31/"}
+      ],
+      "calls": [
+        {"tier": "Do now", "heading": "Freeze the layoff list, cut contractors first", "sub": "Protect the operators who keep barrels flowing."},
+        {"tier": "This quarter", "heading": "Reinvest savings into AI and data centers", "sub": "Buy efficiency with machines, not only with exits."},
+        {"tier": "Big call", "heading": "Spin off the fuel retail business", "sub": "A $248M refining loss does not belong inside an oil major."},
+        {"tier": "Crazy", "heading": "Retrain every laid-off worker as a power technician", "sub": "Turn 9,000 exits into 9,000 scarce skills."}
+      ]
+    }
+  ],
+  "booth": {
+    "say": "I mapped Chevron's Tengiz restart, Black Sea exposure and Houston reset, and I know what I would fix first.",
+    "ask": [
+      "How is the Houston move changing your engineering talent pipeline?",
+      "Where does the AI and data-center power team sit in the organization?"
+    ]
+  },
+  "sources": [
+    {"label": "Chevron investors: 2Q 2026 results and metrics", "url": "https://www.chevron.com/investors"},
+    {"label": "Offshore Engineer: Tengiz halts after fire", "url": "https://www.oedigital.com/news/534582-kazakhstan-s-chevron-led-tengiz-field-halts-production-after-fire"},
+    {"label": "Reuters: Tengiz back to 60% of usual output", "url": "https://www.reuters.com/business/energy/chevrons-tengiz-oilfield-back-60-usual-output-two-sources-say-2026-02-09/"},
+    {"label": "Reuters: Kazakhstan says Chevron promises reliable, safe Tengiz", "url": "https://www.reuters.com/business/energy/kazakhstan-says-chevron-promises-tengiz-will-be-operated-reliably-safely-2026-01-29/"},
+    {"label": "Times of Central Asia: output falls 21%, Tengiz more than halves", "url": "https://timesca.com/kazakhstan-oil-output-falls-21-as-cpc-halt-more-than-halves-tengiz-production/"},
+    {"label": "Reuters: Kazakhstan output plummets after drone attacks", "url": "https://www.reuters.com/business/energy/kazakhstans-oil-output-plummets-after-drone-attacks-forced-exporting-terminal-2026-07-23/"},
+    {"label": "Reuters: Chevron tanker hit by drone in Black Sea", "url": "https://www.reuters.com/business/energy/chevron-tanker-used-cpc-oil-hit-by-drone-black-sea-2026-07-08/"},
+    {"label": "Upstream: Kazakh exports halted again after tanker strikes", "url": "https://www.upstreamonline.com/energy-security/kazakh-oil-exports-halted-again-after-more-black-sea-tanker-strikes/2-1-2022673"},
+    {"label": "CNBC: Chevron slashes up to 20% of workforce", "url": "https://www.cnbc.com/2025/02/12/chevron-will-slash-up-to-20percent-of-its-workforce-as-part-of-cost-cutting-plan.html"},
+    {"label": "Reuters: Chevron to lay off up to 20% of global workforce", "url": "https://www.reuters.com/business/energy/chevron-announces-15-20-layoff-global-workforce-source-says-2025-02-12/"},
+    {"label": "Reuters: highest quarterly profit in six years", "url": "https://www.reuters.com/business/energy/chevron-records-highest-quarterly-profit-six-years-beating-analyst-estimates-2026-07-31/"},
+    {"label": "Reuters: Chevron staff special bonus after earnings blowout", "url": "https://www.reuters.com/legal/litigation/chevron-awards-staff-special-bonus-following-earnings-blowout-2026-08-03/"}
+  ],
+  "colors": {
+    "primary": "#0066B2",
+    "dark": "#0B2D71",
+    "accent": "#B2CC34",
+    "ink": "#000000",
+    "source_url": "https://www.chevron.com/",
+    "evidence": "Read from chevron.com stylesheet CSS custom properties via headless Chromium: --color-medium-blue #0066b2 (primary), --color-dark-blue #0b2d71, --color-light-green #b2cc34; body computed color rgb(0,0,0) and --color-black #000000. Same three hexes in raw page HTML."
+  }
+}

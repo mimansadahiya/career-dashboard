@@ -6,7 +6,7 @@
   "site": "https://stemconnect.events/",
   "job_board": "https://job-board.saseconnect.org/",
   "floorplan": "https://rocexhibitions.expocad.com/Events/26sase/index.html",
-  "generated": "2026-09-30"
+  "generated": "2026-10-01"
  },
  "companies": [
   {
@@ -63,6 +63,7 @@
     "Ask directly whether Global Data Insight & Analytics sponsors H-1B for new-grad data scientists and what the OPT-to-H-1B pipeline looks like."
    ],
    "booth": "",
+   "h1b_2026": null,
    "problems": [
     {
      "title": "Recall and quality crisis: record 152 NHTSA recalls in 2025",
@@ -165,6 +166,7 @@
     "Reference her Seattle base and BNSF's Pacific Northwest operations/Interbay and the Bellevue-area tech hiring as a location advantage; ask about the 2026 capital plan's analytics priorities."
    ],
    "booth": "",
+   "h1b_2026": null,
    "problems": [
     {
      "title": "Cost inflation eroding the operating ratio despite 7% volume growth",
@@ -257,6 +259,7 @@
     "Constellation powers 80% of the Fortune 100; my Oracle churn model and 40+ source ETL work map to customer and trading data at that scale."
    ],
    "booth": "",
+   "h1b_2026": 15,
    "problems": [
     {
      "title": "Crane Clean Energy Center restart: permitting, water, and schedule risk on a 2027 deadline",
@@ -337,6 +340,7 @@
     "Ask where new-grad data/AI hiring sits (Houston vs. global hubs) and how the AI Resident program works for international students."
    ],
    "booth": "",
+   "h1b_2026": 15,
    "problems": [
     {
      "title": "LNG supply disruption and portfolio/trading volatility after the Iran conflict",
@@ -424,6 +428,7 @@
     "Ask about joining 'The HAC' data-driven culture ERG and whether the analytics team hires new grads on OPT/H-1B."
    ],
    "booth": "",
+   "h1b_2026": 24,
    "problems": [
     {
      "title": "Tariff whiplash and a two-speed freight cycle",
@@ -527,7 +532,8 @@
     "I built Airflow DAGs consolidating 40+ data sources at Dark Alpha Capital, similar to integrating upstream/downstream operational data across Chevron's segments.",
     "Ask about early-career data science/analytics pipelines at the Chevron Technical Center and whether they hire new grads into Houston vs. international hubs."
    ],
-   "booth": ""
+   "booth": "",
+   "h1b_2026": 17
   },
   {
    "company": "Rockwell Automation",
@@ -567,7 +573,8 @@
     "Ask about the Edge early-career program and analytics engineer openings; mention they were named a Forbes Best Employer for New Grads.",
     "Ask which teams (Milwaukee HQ vs Austin) sponsor H-1B for data/IT roles given recent 2026 filings."
    ],
-   "booth": ""
+   "booth": "",
+   "h1b_2026": 70
   },
   {
    "company": "Procter & Gamble",
@@ -622,7 +629,8 @@
     "Bring the Dark Alpha Capital ETL story (Airflow DAGs consolidating 40+ sources) and RAG pipeline (50,000+ records) to P&G's data-platform and AI-enabled supply-chain/marketing use cases.",
     "Ask directly about H-1B sponsorship for the Data Scientist/Data Engineer tracks and about the 'Data Science Master's 2027 Grads' pipeline, since public h1bdata records could not be verified for P&G."
    ],
-   "booth": ""
+   "booth": "",
+   "h1b_2026": null
   },
   {
    "company": "Exelon",
@@ -657,7 +665,8 @@
     "My Airflow ETL work consolidating 40+ sources at Dark Alpha Capital fits integrating Exelon's operational and customer data across six utilities.",
     "Ask which of the six utilities hire data/BI roles and whether new-grad analytics hires sit in Chicago corporate."
    ],
-   "booth": ""
+   "booth": "",
+   "h1b_2026": 19
   },
   {
    "company": "GE Vernova",
@@ -695,7 +704,8 @@
     "My AWS + Airflow ETL stack and RAG pipeline (50K+ records) fit GE Vernova's Electrification Software digital products.",
     "Ask which Digital Technology roles are open to F-1/STEM OPT and whether AI/ML hires are remote-friendly."
    ],
-   "booth": ""
+   "booth": "",
+   "h1b_2026": 40
   },
   {
    "company": "Carrier",
@@ -745,7 +755,8 @@
     "Ask which Digital Technology teams in Atlanta/Palm Beach Gardens sponsor H-1B and whether new-grad data roles are on that list.",
     "Connect her USF Athletics revenue analytics ($1.01M revenue, 417K ticket records) to commercial pricing and market analysis work."
    ],
-   "booth": ""
+   "booth": "",
+   "h1b_2026": 5
   },
   {
    "company": "Southwire",
@@ -795,7 +806,8 @@
     "Ask about Senior BI (SAP BW/HANA) and IT Data Analyst openings and confirm 2026 H-1B sponsorship practice.",
     "Highlight interest in data-center and renewables verticals where Southwire is growing and needs analytics."
    ],
-   "booth": ""
+   "booth": "",
+   "h1b_2026": 8
   },
   {
    "company": "Clean Harbors",
@@ -829,7 +841,8 @@
     "I saw your Senior Analytics Engineer and ERP analyst H-1B hires in Norwell - what tools power the analytics stack (Oracle, Power BI, Python)?",
     "Ask whether analytics/IT roles support hybrid work and how the new-grad pipeline works outside CDL/ops hiring."
    ],
-   "booth": ""
+   "booth": "",
+   "h1b_2026": 11
   },
   {
    "company": "Turner Construction",
@@ -874,7 +887,8 @@
     "Ask about data center projects and SafeT Coach AI - which teams hire analytics talent and in which office?",
     "Ask directly about H-1B sponsorship for corporate/innovation roles - they have sponsored data scientists and FP&A professionals before."
    ],
-   "booth": ""
+   "booth": "",
+   "h1b_2026": 2
   },
   {
    "company": "Honeywell",
@@ -914,7 +928,8 @@
     "Given the June 2026 split, ask which entity and sites (Charlotte, Phoenix, Houston) are hiring data/BI analysts and whether those units sponsor H-1B like the 1,291 historical filings suggest.",
     "I have financial modeling (DCF) plus econometrics from a BA Economics - a fit for Honeywell's strategic planning / finance analytics teams, not just engineering roles."
    ],
-   "booth": ""
+   "booth": "",
+   "h1b_2026": null
   },
   {
    "company": "Burns & McDonnell",
@@ -954,7 +969,8 @@
     "Pitch data-pipeline skills (Airflow DAGs, AWS, 40+ sources) for client-facing analytics beyond traditional engineering.",
     "Confirm which business lines sponsor H-1B for analysts given their 727-record sponsorship history."
    ],
-   "booth": ""
+   "booth": "",
+   "h1b_2026": 83
   },
   {
    "company": "Granite Construction",
@@ -1004,7 +1020,8 @@
     "Ask whether Estimator/Project Controls roles value analytics automation (Python + Airflow) for bid and cost data.",
     "Use the Cal Poly connection - Granite is HQ'd in Watsonville, CA and hires heavily on the West Coast."
    ],
-   "booth": ""
+   "booth": "",
+   "h1b_2026": 10
   },
   {
    "company": "Gilbane Building Company",
@@ -1044,7 +1061,8 @@
     "Reference the MicroStrategy BI hire in Providence to show interest in enterprise reporting/data engineering beyond field roles.",
     "Note Cal Poly/USF West Coast ties and flexibility to work from regional offices (e.g., California) if HQ roles are limited."
    ],
-   "booth": ""
+   "booth": "",
+   "h1b_2026": 20
   },
   {
    "company": "Johns Hopkins University Applied Physics Laboratory (JHU APL)",
@@ -1090,7 +1108,8 @@
     "My data engineering matches APL's public health and space data work: I built a RAG pipeline over 50,000+ records and Airflow DAGs consolidating 40+ sources; APL automated COVID dashboard data curation at exactly that scale.",
     "If roles are citizen-only, ask recruiters to flag sister organizations (JHU Whiting School, JHU Medicine) where my analytics profile is sponsorable."
    ],
-   "booth": ""
+   "booth": "",
+   "h1b_2026": null
   }
  ],
  "sase_job_board": [

@@ -1,0 +1,169 @@
+{
+ "slug": "constellation",
+ "company": "Constellation Energy",
+ "tagline": "Restart a nuclear plant, power AI, get paid later.",
+ "colors": {
+  "primary": "#084ed6",
+  "dark": "#063693",
+  "accent": "#f47b27",
+  "ink": "#051b2e"
+ },
+ "kpis": [
+  {
+   "n": "$325",
+   "l": "PJM capacity price cap — hit two auctions in a row"
+  },
+  {
+   "n": "6,831 MW",
+   "l": "short of reliability need in the 2028/29 auction"
+  },
+  {
+   "n": "920 MW",
+   "l": "new data-center deals signed"
+  },
+  {
+   "n": "2027",
+   "l": "Crane nuclear restart target"
+  }
+ ],
+ "lead_thesis": "Constellation's growth is signed but not banked: a nuclear restart on a 2027 deadline, a grid short of power, and AI deals that pay in 2027.",
+ "lead_support": "A PPA is a long-term power sales contract. A capacity auction pays plants to be available. The fix: forecast permits, prices and contract value early.",
+ "problems": [
+  {
+   "kicker": "Problem 01 · Nuclear",
+   "heading": "Restarting Three Mile Island for Microsoft — due 2027",
+   "stat": {
+    "n": "20-yr",
+    "cap": "Microsoft power contract"
+   },
+   "fact": "The NRC cleared the restart without a full environmental review in September 2026; a Pennsylvania water permit is still pending.",
+   "sources": [
+    {
+     "label": "ANS, Sept 2026",
+     "url": "https://www.ans.org/news/2026-09-29/article-8442/nrc-roundup-crane-eafonsi-new-agreement-state/"
+    },
+    {
+     "label": "Federal Register",
+     "url": "https://www.govinfo.gov/content/pkg/FR-2026-09-25/html/2026-19603.htm"
+    }
+   ],
+   "calls": [
+    {
+     "tier": "Do now",
+     "heading": "Put a daily clock on every permit",
+     "sub": "One slip equals lost power revenue."
+    },
+    {
+     "tier": "This quarter",
+     "heading": "Pre-buy fuel, parts and staff",
+     "sub": "Restart work can't be rushed later."
+    },
+    {
+     "tier": "Big call",
+     "heading": "Sign a second 20-year buyer at Crane",
+     "sub": "Lock demand before first power."
+    },
+    {
+     "tier": "Crazy",
+     "heading": "Build the data center next door",
+     "sub": "Sell power and land; double the margin."
+    }
+   ]
+  },
+  {
+   "kicker": "Problem 02 · Grid",
+   "heading": "The grid ran short — capacity hit the $325 price cap",
+   "stat": {
+    "n": "$16.4B",
+    "cap": "Auction spend; 2nd shortfall"
+   },
+   "fact": "The 2028/29 auction cleared at the cap and missed the reliability requirement by 6,831 MW — the first full-market miss.",
+   "sources": [
+    {
+     "label": "PJM Inside Lines",
+     "url": "https://insidelines.pjm.com/pjm-capacity-auction-procures-138318-mw-of-generation-resources-as-work-continues-to-address-growing-electricity-demand/"
+    }
+   ],
+   "calls": [
+    {
+     "tier": "Do now",
+     "heading": "Map data-center demand county by county",
+     "sub": "Find where the load is really going."
+    },
+    {
+     "tier": "This quarter",
+     "heading": "Bid the backstop auction with discipline",
+     "sub": "Price caps hide true scarcity."
+    },
+    {
+     "tier": "Big call",
+     "heading": "Fund new capacity behind the meter",
+     "sub": "Skip the queue; power the campus."
+    },
+    {
+     "tier": "Crazy",
+     "heading": "Buy projects stuck in the interconnection queue",
+     "sub": "Pay for speed; own the delay."
+    }
+   ]
+  },
+  {
+   "kicker": "Problem 03 · Deals",
+   "heading": "Record AI deals — but the biggest check starts in 2027",
+   "stat": {
+    "n": "25–31%",
+    "cap": "Stock drop in 2026"
+   },
+   "fact": "Roughly 920 MW of new deals signed, including Walmart and 190 MW with Amazon at Calvert Cliffs; the largest AI contract pays from June 2027.",
+   "sources": [
+    {
+     "label": "Press coverage (Google News)",
+     "url": "https://news.google.com/rss/search?q=Constellation+Energy+data+center+PPA&hl=en-US&gl=US&ceid=US:en"
+    }
+   ],
+   "calls": [
+    {
+     "tier": "Do now",
+     "heading": "Publish revenue start dates per deal",
+     "sub": "Kill the timing surprise."
+    },
+    {
+     "tier": "This quarter",
+     "heading": "Credit-score every counterparty",
+     "sub": "Hyperscaler concentration is a real risk."
+    },
+    {
+     "tier": "Big call",
+     "heading": "Take equity in AI campuses as part payment",
+     "sub": "Trade power for upside, not just bills."
+    },
+    {
+     "tier": "Crazy",
+     "heading": "Sell a nuclear-powered AI cloud service",
+     "sub": "Own the compute, not just the electrons."
+    }
+   ]
+  }
+ ],
+ "booth": {
+  "say": "Constellation's problem is timing: permits, auctions and AI checks move on other people's clocks.",
+  "ask": [
+   "How does the team track restart risk permit by permit?",
+   "What happens to guidance if a big AI deal starts late?"
+  ]
+ },
+ "sources": [
+  {
+   "label": "ANS Crane coverage",
+   "url": "https://www.ans.org/news/2026-09-29/article-8442/nrc-roundup-crane-eafonsi-new-agreement-state/"
+  },
+  {
+   "label": "PJM auction results",
+   "url": "https://insidelines.pjm.com/pjm-capacity-auction-procures-138318-mw-of-generation-resources-as-work-continues-to-address-growing-electricity-demand/"
+  },
+  {
+   "label": "PPA coverage",
+   "url": "https://news.google.com/rss/search?q=Constellation+Energy+data+center+PPA&hl=en-US&gl=US&ceid=US:en"
+  }
+ ]
+}
